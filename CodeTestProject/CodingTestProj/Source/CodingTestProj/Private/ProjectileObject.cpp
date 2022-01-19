@@ -75,6 +75,11 @@ void AProjectileObject::BeginPlay()
 {
     Super::BeginPlay();
     //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
+    TestEvent();
+    if (!AffectMultipleActors)
+    {
+        AmtOfActorsToAffect = 1;
+    }
 }
 
 // Called every frame
@@ -103,17 +108,29 @@ void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
     const FString ObjTypeS = *UEnum::GetDisplayValueAsText(ObjType).ToString();
     //PrintString(FString::Printf(TEXT("Type: %s"), *ObjTypeS));
 
-
     if (EffectDataTable)
     {
         static const FString ContextString(TEXT("Effect Context"));
-        FProjectileEffect * ProjectileEff = EffectDataTable->FindRow<FProjectileEffect>(FName(ObjTypeS), ContextString, true);
-        if (ProjectileEff)
+        FProjectileEffect* TableRow = EffectDataTable->FindRow<FProjectileEffect>(FName(ObjTypeS), ContextString, true);
+        if (TableRow)
         {
             
             //const FProjectileEffect& ProjectileTable = ProjectileEff;
-           // PrintString(FString::Printf(TEXT("%s"), *ProjectileEff->Description));
-           OnApplyEffect(/*ProjectileThing, */ OtherActor, ObjTypeS);
+            if (AmtOfActorsToAffect > 0)
+            {
+                OnApplyEffect(/*EffectDataTable, */OtherActor, ObjTypeS);
+                AmtOfActorsToAffect--;
+            }
+            
+            
+            
+            if (DestroyProjectile)
+            {
+                   AProjectileObject::Destroy();
+            }
+            
+           // PrintString(FString::Printf(TEXT("%s"), *TableRow->Description));
+           
         }
     }
 

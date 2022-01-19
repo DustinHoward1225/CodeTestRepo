@@ -6,7 +6,6 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
-
 #include "Engine/DataTable.h"
 #include "ProjectileObject.generated.h"
 
@@ -36,7 +35,6 @@ public:
 	// Sets default values for this actor's properties
 	AProjectileObject();
 	//FString ObjTypeS;
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -64,14 +62,23 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Projectile)
 		USphereComponent* CollisionComponent;
 
-
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Variables)
+		bool DestroyProjectile;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Variables)
+		bool AffectMultipleActors;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Variables)
+		int AmtOfActorsToAffect;
 
 protected:
 	UFUNCTION()
 		void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 	
 	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
-		void OnApplyEffect(/*struct FProjectileEffect& EffectTable, */ AActor * AffectedActor, const FString& EffectToTakePlace);
+		void OnApplyEffect(/*const FTableRowBase& EffectTable, */ AActor * AffectedActor, const FString& EffectToTakePlace);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
+		void TestEvent();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UDataTable* EffectDataTable;

@@ -17,7 +17,7 @@ struct FHitResult;
 #endif
 #define CODINGTESTPROJ_ProjectileObject_generated_h
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_17_GENERATED_BODY \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FProjectileEffect_Statics; \
 	CODINGTESTPROJ_API static class UScriptStruct* StaticStruct(); \
 	typedef FTableRowBase Super;
@@ -25,18 +25,18 @@ struct FHitResult;
 
 template<> CODINGTESTPROJ_API UScriptStruct* StaticStruct<struct FProjectileEffect>();
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_SPARSE_DATA
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_RPC_WRAPPERS \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_SPARSE_DATA
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnHit);
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnHit);
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_EVENT_PARMS \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_EVENT_PARMS \
 	struct ProjectileObject_eventOnApplyEffect_Parms \
 	{ \
 		AActor* AffectedActor; \
@@ -44,8 +44,8 @@ template<> CODINGTESTPROJ_API UScriptStruct* StaticStruct<struct FProjectileEffe
 	};
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_CALLBACK_WRAPPERS
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_INCLASS_NO_PURE_DECLS \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_CALLBACK_WRAPPERS
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProjectileObject(); \
 	friend struct Z_Construct_UClass_AProjectileObject_Statics; \
@@ -54,7 +54,7 @@ public: \
 	DECLARE_SERIALIZER(AProjectileObject)
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_INCLASS \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_INCLASS \
 private: \
 	static void StaticRegisterNativesAProjectileObject(); \
 	friend struct Z_Construct_UClass_AProjectileObject_Statics; \
@@ -63,7 +63,7 @@ public: \
 	DECLARE_SERIALIZER(AProjectileObject)
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_STANDARD_CONSTRUCTORS \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AProjectileObject(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AProjectileObject) \
@@ -76,7 +76,7 @@ private: \
 public:
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_ENHANCED_CONSTRUCTORS \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AProjectileObject(AProjectileObject&&); \
@@ -87,36 +87,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AProjectileObject); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AProjectileObject)
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_PRIVATE_PROPERTY_OFFSET \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__EffectDataTable() { return STRUCT_OFFSET(AProjectileObject, EffectDataTable); }
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_30_PROLOG \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_EVENT_PARMS
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_29_PROLOG \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_EVENT_PARMS
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_GENERATED_BODY_LEGACY \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_PRIVATE_PROPERTY_OFFSET \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_SPARSE_DATA \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_RPC_WRAPPERS \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_CALLBACK_WRAPPERS \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_INCLASS \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_STANDARD_CONSTRUCTORS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_PRIVATE_PROPERTY_OFFSET \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_SPARSE_DATA \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_RPC_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_CALLBACK_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_INCLASS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_GENERATED_BODY \
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_PRIVATE_PROPERTY_OFFSET \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_SPARSE_DATA \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_CALLBACK_WRAPPERS \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_INCLASS_NO_PURE_DECLS \
-	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_ENHANCED_CONSTRUCTORS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_PRIVATE_PROPERTY_OFFSET \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_SPARSE_DATA \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_CALLBACK_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_INCLASS_NO_PURE_DECLS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
