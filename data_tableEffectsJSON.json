@@ -1,0 +1,42 @@
+[
+	{
+		"Name": "Staic",
+		"Effect": "Nothing",
+		"Description": "Does nothing"
+	},
+	{
+		"Name": "Dynamic",
+		"Effect": "Jump",
+		"Description": "Makes it jump or something"
+	},
+	{
+		"Name": "Pawn",
+		"Effect": "Damage",
+		"Description": "Damages Health of Pawn"
+	},
+	{
+		"Name": "Visible",
+		"Effect": "Visibility",
+		"Description": "Turns it Invisible or not"
+	},
+	{
+		"Name": "Camera",
+		"Effect": "Nothing",
+		"Description": "Does nothing"
+	},
+	{
+		"Name": "PhysicsBody",
+		"Effect": "Particle",
+		"Description": "Spawns a particle effect"
+	},
+	{
+		"Name": "Vehicle",
+		"Effect": "Launch",
+		"Description": "Launches the object"
+	},
+	{
+		"Name": "Destructible",
+		"Effect": "Destroy",
+		"Description": "Destroys the object"
+	}
+]

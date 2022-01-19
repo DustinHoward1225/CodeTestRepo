@@ -36,6 +36,15 @@ template<> CODINGTESTPROJ_API UScriptStruct* StaticStruct<struct FProjectileEffe
 	DECLARE_FUNCTION(execOnHit);
 
 
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_EVENT_PARMS \
+	struct ProjectileObject_eventOnApplyEffect_Parms \
+	{ \
+		AActor* AffectedActor; \
+		FString EffectToTakePlace; \
+	};
+
+
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_CALLBACK_WRAPPERS
 #define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProjectileObject(); \
@@ -82,13 +91,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AProjectileObject); \
 	FORCEINLINE static uint32 __PPO__EffectDataTable() { return STRUCT_OFFSET(AProjectileObject, EffectDataTable); }
 
 
-#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_30_PROLOG
+#define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_30_PROLOG \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_EVENT_PARMS
+
+
 #define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_PRIVATE_PROPERTY_OFFSET \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_SPARSE_DATA \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_RPC_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_CALLBACK_WRAPPERS \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_INCLASS \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_STANDARD_CONSTRUCTORS \
 public: \
@@ -101,6 +114,7 @@ public: \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_PRIVATE_PROPERTY_OFFSET \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_SPARSE_DATA \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_CALLBACK_WRAPPERS \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_INCLASS_NO_PURE_DECLS \
 	CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_33_ENHANCED_CONSTRUCTORS \
 private: \

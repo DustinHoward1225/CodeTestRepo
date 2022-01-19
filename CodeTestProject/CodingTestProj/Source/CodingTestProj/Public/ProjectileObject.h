@@ -43,7 +43,7 @@ protected:
 
 public:
 	// Called every frame
-	//virtual void Tick(float DeltaTime) override;
+	virtual void Tick(float DeltaTime) override;
 
 
 	//UPROPERTY(VisibleAnywhere, Category = "Components")
@@ -69,6 +69,9 @@ public:
 protected:
 	UFUNCTION()
 		void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+	
+	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
+		void OnApplyEffect(/*struct FProjectileEffect& EffectTable, */ AActor * AffectedActor, const FString& EffectToTakePlace);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UDataTable* EffectDataTable;

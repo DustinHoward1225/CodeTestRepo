@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeProjectileObject() {}
 	CODINGTESTPROJ_API UClass* Z_Construct_UClass_AProjectileObject_NoRegister();
 	CODINGTESTPROJ_API UClass* Z_Construct_UClass_AProjectileObject();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
@@ -139,6 +139,14 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		P_THIS->OnHit(Z_Param_HitComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_NormalImpulse,Z_Param_Out_Hit);
 		P_NATIVE_END;
 	}
+	static FName NAME_AProjectileObject_OnApplyEffect = FName(TEXT("OnApplyEffect"));
+	void AProjectileObject::OnApplyEffect(AActor* AffectedActor, const FString& EffectToTakePlace)
+	{
+		ProjectileObject_eventOnApplyEffect_Parms Parms;
+		Parms.AffectedActor=AffectedActor;
+		Parms.EffectToTakePlace=EffectToTakePlace;
+		ProcessEvent(FindFunctionChecked(NAME_AProjectileObject_OnApplyEffect),&Parms);
+	}
 	void AProjectileObject::StaticRegisterNativesAProjectileObject()
 	{
 		UClass* Class = AProjectileObject::StaticClass();
@@ -146,6 +154,48 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 			{ "OnHit", &AProjectileObject::execOnHit },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics
+	{
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AffectedActor;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EffectToTakePlace_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_EffectToTakePlace;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedActor = { "AffectedActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ProjectileObject_eventOnApplyEffect_Parms, AffectedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace = { "EffectToTakePlace", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ProjectileObject_eventOnApplyEffect_Parms, EffectToTakePlace), METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedActor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ProjectileEffect" },
+		{ "Comment", "/*struct FProjectileEffect& EffectTable, */" },
+		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "struct FProjectileEffect& EffectTable," },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileObject, nullptr, "OnApplyEffect", nullptr, nullptr, sizeof(ProjectileObject_eventOnApplyEffect_Parms), Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AProjectileObject_OnApplyEffect()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AProjectileObject_OnHit_Statics
 	{
@@ -255,6 +305,7 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		(UObject* (*)())Z_Construct_UPackage__Script_CodingTestProj,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProjectileObject_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AProjectileObject_OnApplyEffect, "OnApplyEffect" }, // 3428220421
 		{ &Z_Construct_UFunction_AProjectileObject_OnHit, "OnHit" }, // 2549274709
 	};
 #if WITH_METADATA
@@ -333,7 +384,7 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectileObject, 4026491289);
+	IMPLEMENT_CLASS(AProjectileObject, 3185089953);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<AProjectileObject>()
 	{
 		return AProjectileObject::StaticClass();

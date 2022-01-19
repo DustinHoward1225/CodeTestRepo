@@ -74,8 +74,14 @@ void ACodingTestProjCharacter::SetupPlayerInputComponent(class UInputComponent* 
 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACodingTestProjCharacter::OnResetVR);
+
+	PlayerInputComponent->BindAction("Flail", IE_Pressed, this, &ACodingTestProjCharacter::SpawnProjectile);
 }
 
+void ACodingTestProjCharacter::SpawnProjectile()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
+}
 
 void ACodingTestProjCharacter::OnResetVR()
 {

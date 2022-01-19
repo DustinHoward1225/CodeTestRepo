@@ -11,7 +11,7 @@
 AProjectileObject::AProjectileObject()
 {
     // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-    PrimaryActorTick.bCanEverTick = false;
+    PrimaryActorTick.bCanEverTick = true;
 
 
     //HitBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
@@ -78,20 +78,44 @@ void AProjectileObject::BeginPlay()
 }
 
 // Called every frame
-//void AProjectileObject::Tick(float DeltaTime)
-//{
-//	Super::Tick(DeltaTime);
-//    //&AProjectileObject::OnHit();
-//}
-//static ConstructorHelpers::FObjectFinder<UDataTable> PlayerAttackMontageDataObject(TEXT("DataTable'/Game/Datatables/EffectsTableObj.EffectsTableObj'"));
-
+void AProjectileObject::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+   /* if (EffectDataTable)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Tyeee"));
+    }
+    else
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("no!"));
+    }*/
+}
+ 
+//static ConstructorHelpers::FObjectFinder<UDataTable> ProjectileDataObject(TEXT("DataTable'/Game/Datatables/EffectsTableObj.EffectsTableObj'"));
+//EffectDataTable = ProjectileDataObject
 
 void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-    PrintString(FString::Printf(TEXT("Hit: %s"), *OtherActor->GetName()));
+    //PrintString(FString::Printf(TEXT("Hit: %s"), *OtherActor->GetName()));
     //PrintString(FString::Printf(TEXT("YUO"), *OtherActor->GetName()));
 
     ECollisionChannel ObjType = OtherComp->GetCollisionObjectType();
+    const FString ObjTypeS = *UEnum::GetDisplayValueAsText(ObjType).ToString();
+    //PrintString(FString::Printf(TEXT("Type: %s"), *ObjTypeS));
+
+
+    if (EffectDataTable)
+    {
+        static const FString ContextString(TEXT("Effect Context"));
+        FProjectileEffect * ProjectileEff = EffectDataTable->FindRow<FProjectileEffect>(FName(ObjTypeS), ContextString, true);
+        if (ProjectileEff)
+        {
+            
+            //const FProjectileEffect& ProjectileTable = ProjectileEff;
+           // PrintString(FString::Printf(TEXT("%s"), *ProjectileEff->Description));
+           OnApplyEffect(/*ProjectileThing, */ OtherActor, ObjTypeS);
+        }
+    }
 
     /*switch (ObjType)
     {
