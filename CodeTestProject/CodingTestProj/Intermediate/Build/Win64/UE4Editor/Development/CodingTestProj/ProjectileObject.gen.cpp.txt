@@ -1,0 +1,16 @@
+C:\Users\dusti\Documents\Github\ExWorldCodingTest\CodeTestRepo\CodeTestProject\CodingTestProj\Intermediate\Build\Win64\UE4Editor\Development\CodingTestProj\Definitions.CodingTestProj.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\dusti\Documents\Github\ExWorldCodingTest\CodeTestRepo\CodeTestProject\CodingTestProj\Source\CodingTestProj/Public/ProjectileObject.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/DataTable.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\DataTableUtils.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
+C:\Users\dusti\Documents\Github\ExWorldCodingTest\CodeTestRepo\CodeTestProject\CodingTestProj\Intermediate\Build\Win64\UE4Editor\Inc\CodingTestProj\ProjectileObject.generated.h
