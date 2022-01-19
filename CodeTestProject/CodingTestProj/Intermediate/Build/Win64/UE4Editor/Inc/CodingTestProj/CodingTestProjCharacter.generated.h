@@ -60,7 +60,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACodingTestProjCharacter); \
 
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ACodingTestProjCharacter, CameraBoom); } \
-	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ACodingTestProjCharacter, FollowCamera); }
+	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ACodingTestProjCharacter, FollowCamera); } \
+	FORCEINLINE static uint32 __PPO__ProjectileSpawnPlace() { return STRUCT_OFFSET(ACodingTestProjCharacter, ProjectileSpawnPlace); }
 
 
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_9_PROLOG

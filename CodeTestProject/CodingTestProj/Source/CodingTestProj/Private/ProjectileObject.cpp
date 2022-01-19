@@ -29,13 +29,17 @@ AProjectileObject::AProjectileObject()
     if (!ProjectileMeshComponent)
     {
         ProjectileMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
+        ProjectileMeshComponent->AttachTo(RootComponent);
         static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
         if (Mesh.Succeeded())
         {
             ProjectileMeshComponent->SetStaticMesh(Mesh.Object);
+            ProjectileMeshComponent->AttachTo(RootComponent);
         }
+        //const FVector Empty = (0.0f,0.0f,0.0f);
+        
     }
-
+    ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
     if (!CollisionComponent)
     {
         // Use a sphere as a simple collision representation.
@@ -80,6 +84,7 @@ void AProjectileObject::BeginPlay()
     {
         AmtOfActorsToAffect = 1;
     }
+    ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
 }
 
 // Called every frame

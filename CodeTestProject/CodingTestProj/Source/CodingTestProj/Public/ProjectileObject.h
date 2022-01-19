@@ -51,7 +51,7 @@ public:
 	//UPROPERTY(VisibleAnywhere, Category = "Chillin")
 		//USceneComponent* RootComponent;
 
-	UPROPERTY(VisibleAnywhere, Category = Movement)
+	UPROPERTY(EditAnywhere, Category = Movement)
 		UProjectileMovementComponent* ProjectileMovementComponent;
 
 	// Sphere mesh component

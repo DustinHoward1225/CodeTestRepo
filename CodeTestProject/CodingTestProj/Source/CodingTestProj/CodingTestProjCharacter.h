@@ -18,6 +18,9 @@ class ACodingTestProjCharacter : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
+	UPROPERTY(visibleAnywhere)
+		class USceneComponent* ProjectileSpawnPlace;
 public:
 	ACodingTestProjCharacter();
 
@@ -70,7 +73,14 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 public:
-
+	
 	void SpawnProjectile();
+
+		
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "YES")
+		TSubclassOf<AActor> ToSpawn;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Transform")
+		UAnimMontage* SpawnAnimation;
 };
 

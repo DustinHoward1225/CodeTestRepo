@@ -43,6 +43,7 @@ ACodingTestProjCharacter::ACodingTestProjCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+	ProjectileSpawnPlace = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSpawnPoint"));
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -80,6 +81,13 @@ void ACodingTestProjCharacter::SetupPlayerInputComponent(class UInputComponent* 
 
 void ACodingTestProjCharacter::SpawnProjectile()
 {
+	const FVector Location = ProjectileSpawnPlace->GetComponentLocation();
+	const FRotator Rotation = ProjectileSpawnPlace->GetComponentRotation();
+
+	//GetMesh()->PlayAnimation(SpawnAnimation, false);
+	GetMesh()->PlayAnimMontage(SpawnAnimation, 1.0f);
+
+	GetWorld()->SpawnActor<AActor>(ToSpawn, Location, Rotation);
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
 }
 
