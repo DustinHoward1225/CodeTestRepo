@@ -19,8 +19,6 @@ class ACodingTestProjCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
-	UPROPERTY(visibleAnywhere)
-	class USceneComponent* ProjectileSpawnPlace;
 public:
 	ACodingTestProjCharacter();
 
@@ -31,6 +29,9 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		class USceneComponent* ProjectileSpawnPlace;
 
 protected:
 

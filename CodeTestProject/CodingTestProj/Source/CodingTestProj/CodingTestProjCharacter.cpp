@@ -84,11 +84,11 @@ void ACodingTestProjCharacter::FlailAround()
 	if (SpawnAnimation)
 		{
 			PlayAnimMontage(SpawnAnimation, 1, NAME_None);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("jljl!"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("jljl!"));
 		}
 		else
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("noanimation!"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("noanimation!"));
 		}
 }
 
