@@ -8,6 +8,9 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "TimerManager.h"
+#include "Net/UnrealNetwork.h"
+#include "Engine/Engine.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ACodingTestProjCharacter
@@ -44,6 +47,8 @@ ACodingTestProjCharacter::ACodingTestProjCharacter()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	ProjectileSpawnPlace = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSpawnPoint"));
+	ProjectileSpawnPlace->AttachTo(GetCapsuleComponent());
+	//ProjectileSpawnPlace->SetRelativeLocation(FVector(100.f, 0.f, 0.f));
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -81,9 +86,18 @@ void ACodingTestProjCharacter::SetupPlayerInputComponent(class UInputComponent* 
 
 void ACodingTestProjCharacter::FlailAround()
 {
+
+	//GetWorldTimerManager().SetTimer(DelayTimer, this, &AMyCharacterPlayer::DelayReset, 2.0f, false);
 	if (SpawnAnimation)
 		{
+		if (!bProjectileCooldown)
+		{
 			PlayAnimMontage(SpawnAnimation, 1, NAME_None);
+			bProjectileCooldown = true;
+
+			FTimerHandle InputDelayManager;
+			GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::DelayTime, cooldownLength, false);
+		}
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("jljl!"));
 		}
 		else
@@ -91,9 +105,15 @@ void ACodingTestProjCharacter::FlailAround()
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("noanimation!"));
 		}
 }
+void ACodingTestProjCharacter::DelayTime()
+{
+	bProjectileCooldown = false;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Able to fire again!"));
+}
 
 void ACodingTestProjCharacter::SpawnProjectile()
 {
+	ProjectileSpawnPlace->SetRelativeLocation(FVector(100.f, 0.f, 0.f));
 	const FVector Location = ProjectileSpawnPlace->GetComponentLocation();
 	const FRotator Rotation = ProjectileSpawnPlace->GetComponentRotation();
 	GetWorld()->SpawnActor<AActor>(ToSpawn, Location, Rotation);

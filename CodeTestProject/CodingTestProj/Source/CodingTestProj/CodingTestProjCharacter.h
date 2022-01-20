@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "TimerManager.h"
 #include "CodingTestProjCharacter.generated.h"
 
 UCLASS(config=Game)
@@ -73,6 +74,8 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+
+
 public:
 	
 	void FlailAround();
@@ -86,5 +89,15 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Transform")
 		UAnimMontage* SpawnAnimation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Transform")
+	float cooldownLength;
+
+protected:
+	void DelayTime();
+	bool bProjectileCooldown;
+
+
+	
 };
 
