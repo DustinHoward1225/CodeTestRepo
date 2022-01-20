@@ -51,9 +51,6 @@ public:
 	//UPROPERTY(VisibleAnywhere, Category = "Chillin")
 		//USceneComponent* RootComponent;
 
-	UPROPERTY(EditAnywhere, Category = Movement)
-		UProjectileMovementComponent* ProjectileMovementComponent;
-
 	// Sphere mesh component
 	UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
 		UStaticMeshComponent* ProjectileMeshComponent;
@@ -61,6 +58,9 @@ public:
 	// Sphere collision component
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Projectile)
 		USphereComponent* CollisionComponent;
+
+	UPROPERTY(VisibleAnywhere, Category = Movement)
+		UProjectileMovementComponent* ProjectileMovementComponent;
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Variables)

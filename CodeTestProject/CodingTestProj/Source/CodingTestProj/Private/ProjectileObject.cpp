@@ -20,16 +20,29 @@ AProjectileObject::AProjectileObject()
     {
         RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSceneComponent"));
     }
-    /*else
+    
+   if (!CollisionComponent)
     {
-        RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSceneComponent"));
+        // Use a sphere as a simple collision representation.
+        CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
+        CollisionComponent->AttachTo(RootComponent);
+        CollisionComponent->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
+
+        // Set the sphere's collision radius.
+        CollisionComponent->InitSphereRadius(35.0f);
+        // Set the root component to be the collision component.
+        //RootComponent = CollisionComponent;
     }
-    */
+    //ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 30.f));
+    //ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
+    /*else {
+        CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
+    }*/
 
     if (!ProjectileMeshComponent)
     {
         ProjectileMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
-        //ProjectileMeshComponent->AttachTo(RootComponent);
+        ProjectileMeshComponent->AttachTo(CollisionComponent);
         static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
         if (Mesh.Succeeded())
         {
@@ -37,23 +50,12 @@ AProjectileObject::AProjectileObject()
             //ProjectileMeshComponent->AttachTo(RootComponent);
         }
         //const FVector Empty = (0.0f,0.0f,0.0f);
-        
+        ProjectileMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
+        ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, -30.f));
     }
-    ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
-    if (!CollisionComponent)
-    {
-        // Use a sphere as a simple collision representation.
-        CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
-        CollisionComponent->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
-
-        // Set the sphere's collision radius.
-        CollisionComponent->InitSphereRadius(90.0f);
-        // Set the root component to be the collision component.
-        RootComponent = CollisionComponent;
-    }
-    else {
-        CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
-    }
+    //ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
+    
+    
 
     if (!ProjectileMovementComponent)
     {
@@ -84,7 +86,7 @@ void AProjectileObject::BeginPlay()
     {
         AmtOfActorsToAffect = 1;
     }
-    ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
+    
 }
 
 // Called every frame
@@ -115,29 +117,23 @@ void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
 
     if (EffectDataTable)
     {
-        static const FString ContextString(TEXT("Effect Context"));
-        FProjectileEffect* TableRow = EffectDataTable->FindRow<FProjectileEffect>(FName(ObjTypeS), ContextString, true);
+        //static const FString ContextString(TEXT("Effect Context"));
+        //FProjectileEffect* TableRow = EffectDataTable->FindRow<FProjectileEffect>(FName(ObjTypeS), ContextString, true);
         //const FProjectileEffect& oof = EffectDataTable;
-        if (TableRow)
-        {
+        //if (TableRow)
+        //{
             
             //const FProjectileEffect& ProjectileTable = ProjectileEff;
             if (AmtOfActorsToAffect > 0)
             {
                 OnApplyEffect(EffectDataTable, OtherActor, ObjTypeS);
                 AmtOfActorsToAffect--;
-            }
-            
-            
-            
+            } 
             if (DestroyProjectile)
             {
                    AProjectileObject::Destroy();
-            }
-            
-           // PrintString(FString::Printf(TEXT("%s"), *TableRow->Description));
-           
-        }
+            }            
+        //}
     }
 
     /*switch (ObjType)

@@ -24,9 +24,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileObject() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
-	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 // End Cross Module References
 
 static_assert(std::is_polymorphic<FProjectileEffect>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FProjectileEffect cannot be polymorphic unless super FTableRowBase is polymorphic");
@@ -311,10 +311,6 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovementComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovementComponent;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMeshComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMeshComponent;
@@ -322,6 +318,10 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CollisionComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CollisionComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovementComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovementComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DestroyProjectile_MetaData[];
 #endif
@@ -360,16 +360,6 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData[] = {
-		{ "Category", "Movement" },
-		{ "Comment", "//UPROPERTY(VisibleAnywhere, Category = \"Chillin\")\n//USceneComponent* RootComponent;\n" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
-		{ "ToolTip", "UPROPERTY(VisibleAnywhere, Category = \"Chillin\")\nUSceneComponent* RootComponent;" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent = { "ProjectileMovementComponent", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, ProjectileMovementComponent), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMeshComponent_MetaData[] = {
 		{ "Category", "Projectile" },
 		{ "Comment", "// Sphere mesh component\n" },
@@ -389,6 +379,14 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent = { "CollisionComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, CollisionComponent), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent = { "ProjectileMovementComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, ProjectileMovementComponent), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile_MetaData[] = {
 		{ "Category", "Variables" },
@@ -426,9 +424,9 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable = { "EffectDataTable", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, EffectDataTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProjectileObject_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmtOfActorsToAffect,
@@ -461,7 +459,7 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectileObject, 3298103673);
+	IMPLEMENT_CLASS(AProjectileObject, 3067907833);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<AProjectileObject>()
 	{
 		return AProjectileObject::StaticClass();
