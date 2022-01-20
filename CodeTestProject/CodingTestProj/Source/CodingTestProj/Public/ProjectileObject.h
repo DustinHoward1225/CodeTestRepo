@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "TimerManager.h"
 #include "Engine/DataTable.h"
 #include "ProjectileObject.generated.h"
 
@@ -82,4 +83,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UDataTable* EffectDataTable;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float ProjectileLifespan;
+
+	void DestroySelf();
 };

@@ -4,7 +4,9 @@
 
 #include "ProjectileObject.h"
 #include "Components/SphereComponent.h"
+#include "TimerManager.h"
 #include "Components/BoxComponent.h"
+#include "..\Public\ProjectileObject.h"
 
 #define PrintString(String) GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::White,String)
 // Sets default values
@@ -71,7 +73,7 @@ AProjectileObject::AProjectileObject()
     }
 
 
-
+    ProjectileLifespan = 70.0f;
     //CollisionComponent->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
 
 }
@@ -86,7 +88,8 @@ void AProjectileObject::BeginPlay()
     {
         AmtOfActorsToAffect = 1;
     }
-    
+    FTimerHandle InputDelayManager;
+    GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &AProjectileObject::DestroySelf, ProjectileLifespan, false);
 }
 
 // Called every frame
@@ -197,6 +200,11 @@ void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
    // {
    // }
 
+}
+
+void AProjectileObject::DestroySelf()
+{
+    AProjectileObject::Destroy();
 }
 
 
