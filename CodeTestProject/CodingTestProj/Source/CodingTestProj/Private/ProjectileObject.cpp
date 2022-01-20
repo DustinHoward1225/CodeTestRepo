@@ -1,6 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "ProjectileObject.h"
 #include "Components/SphereComponent.h"
@@ -8,86 +6,63 @@
 #include "Components/BoxComponent.h"
 #include "..\Public\ProjectileObject.h"
 
-#define PrintString(String) GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::White,String)
 // Sets default values
 AProjectileObject::AProjectileObject()
 {
     // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 
+    // Attempt at replication
     bReplicates = true;
-    //HitBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
-    //HitBox->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
-    if (!RootComponent)
+
+    // Root component setup
+    RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSceneComponent"));
+
+    // Collision component setup
+    ProjectileCollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
+    ProjectileCollisionComponent->AttachTo(RootComponent);
+    // Collision Radius and OnHit assigned
+    ProjectileCollisionComponent->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
+    ProjectileCollisionComponent->InitSphereRadius(35.0f);
+
+    // Mesh component setup
+    ProjectileMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
+    ProjectileMeshComponent->AttachTo(ProjectileCollisionComponent);
+    // Finding the correct mesh to set
+    static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
+    if (Mesh.Succeeded())
     {
-        RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSceneComponent"));
+        ProjectileMeshComponent->SetStaticMesh(Mesh.Object);
     }
-    
-   if (!CollisionComponent)
-    {
-        // Use a sphere as a simple collision representation.
-        CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
-        CollisionComponent->AttachTo(RootComponent);
-        CollisionComponent->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
+    // Setting the size and offset
+    ProjectileMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
+    ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, -30.f));
 
-        // Set the sphere's collision radius.
-        CollisionComponent->InitSphereRadius(35.0f);
-        // Set the root component to be the collision component.
-        //RootComponent = CollisionComponent;
-    }
-    //ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 30.f));
-    //ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
-    /*else {
-        CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
-    }*/
+    // Movement component setup
+    ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
+    ProjectileMovementComponent->SetUpdatedComponent(ProjectileCollisionComponent);
+    // Movement component features
+    ProjectileMovementComponent->InitialSpeed = 3000.0f;
+    ProjectileMovementComponent->MaxSpeed = 3000.0f;
+    ProjectileMovementComponent->bRotationFollowsVelocity = true;
+    ProjectileMovementComponent->bShouldBounce = true;
+    ProjectileMovementComponent->Bounciness = 0.3f;
+    ProjectileMovementComponent->ProjectileGravityScale = 0.0f;
 
-    if (!ProjectileMeshComponent)
-    {
-        ProjectileMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
-        ProjectileMeshComponent->AttachTo(CollisionComponent);
-        static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
-        if (Mesh.Succeeded())
-        {
-            ProjectileMeshComponent->SetStaticMesh(Mesh.Object);
-            //ProjectileMeshComponent->AttachTo(RootComponent);
-        }
-        //const FVector Empty = (0.0f,0.0f,0.0f);
-        ProjectileMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
-        ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, -30.f));
-    }
-    //ProjectileMeshComponent->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
-    
-    
-
-    if (!ProjectileMovementComponent)
-    {
-        // Use this component to drive this projectile's movement.
-        ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
-        ProjectileMovementComponent->SetUpdatedComponent(CollisionComponent);
-        ProjectileMovementComponent->InitialSpeed = 3000.0f;
-        ProjectileMovementComponent->MaxSpeed = 3000.0f;
-        ProjectileMovementComponent->bRotationFollowsVelocity = true;
-        ProjectileMovementComponent->bShouldBounce = true;
-        ProjectileMovementComponent->Bounciness = 0.3f;
-        ProjectileMovementComponent->ProjectileGravityScale = 0.0f;
-    }
-
-
-    ProjectileLifespan = 70.0f;
-    //CollisionComponent->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
-
+    // Lifespan of projectile
+    ProjectileLifespan = 7.0f;
 }
 
 // Called when the game starts or when spawned
 void AProjectileObject::BeginPlay()
 {
     Super::BeginPlay();
-    //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
-    TestEvent();
-    if (!AffectMultipleActors)
+    // Can only affect one actor if it can't affect multiple
+    if (!bAffectMultipleActors)
     {
-        AmtOfActorsToAffect = 1;
+        AmountOfActorsToAffect = 1;
     }
+    // Starts the delay for the lifespan
     FTimerHandle InputDelayManager;
     GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &AProjectileObject::DestroySelf, ProjectileLifespan, false);
 }
@@ -95,116 +70,35 @@ void AProjectileObject::BeginPlay()
 // Called every frame
 void AProjectileObject::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-   /* if (EffectDataTable)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Tyeee"));
-    }
-    else
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("no!"));
-    }*/
+	Super::Tick(DeltaTime);   
 }
- 
-//static ConstructorHelpers::FObjectFinder<UDataTable> ProjectileDataObject(TEXT("DataTable'/Game/Datatables/EffectsTableObj.EffectsTableObj'"));
-//EffectDataTable = ProjectileDataObject
+
 
 void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-    //PrintString(FString::Printf(TEXT("Hit: %s"), *OtherActor->GetName()));
-    //PrintString(FString::Printf(TEXT("YUO"), *OtherActor->GetName()));
-
-    ECollisionChannel ObjType = OtherComp->GetCollisionObjectType();
-    const FString ObjTypeS = *UEnum::GetDisplayValueAsText(ObjType).ToString();
-    //PrintString(FString::Printf(TEXT("Type: %s"), *ObjTypeS));
+    // Gets the object type of the affected actor and converts it to a string
+    ECollisionChannel ObjectType = OtherComp->GetCollisionObjectType();
+    const FString ObjectTypeString = *UEnum::GetDisplayValueAsText(ObjectType).ToString();
 
     if (EffectDataTable)
-    {
-        //static const FString ContextString(TEXT("Effect Context"));
-        //FProjectileEffect* TableRow = EffectDataTable->FindRow<FProjectileEffect>(FName(ObjTypeS), ContextString, true);
-        //const FProjectileEffect& oof = EffectDataTable;
-        //if (TableRow)
-        //{
-            
-            //const FProjectileEffect& ProjectileTable = ProjectileEff;
-            if (AmtOfActorsToAffect > 0)
-            {
-                OnApplyEffect(EffectDataTable, OtherActor, ObjTypeS);
-                AmtOfActorsToAffect--;
-            } 
-            if (DestroyProjectile)
-            {
-                   AProjectileObject::Destroy();
-            }            
-        //}
-    }
+    {        
+        if (AmountOfActorsToAffect > 0)
+        {
+            // If the data table is valid and it can affect actors, it would apply the effect and decrement the amount of actors it has left
+            OnApplyEffect(EffectDataTable, OtherActor, ObjectTypeString);
+            AmountOfActorsToAffect--;
+        } 
 
-    /*switch (ObjType)
-    {
-    case 0:
-        PrintString(FString::Printf(TEXT("static")));
-        break;
-    case 1:
-        PrintString(FString::Printf(TEXT("dynami")));
-        break;
-    case 2:
-        PrintString(FString::Printf(TEXT("pawn")));
-        break;
-    case 3:
-        PrintString(FString::Printf(TEXT("Visibllle")));
-        break;
-    case 4:
-        PrintString(FString::Printf(TEXT("cam")));
-        break;
-    case 5:
-        PrintString(FString::Printf(TEXT("phys")));
-        break;
-    case 6:
-        PrintString(FString::Printf(TEXT("car")));
-        break;
-    case 7:
-        PrintString(FString::Printf(TEXT("oooof")));
-        break;
-    default:
-        PrintString(FString::Printf(TEXT("jjj")));
-        break;
-        /*
-        *
-        *
-        *
-        *
-        *
-        *
-        *
-        *
-        //Reserved Engine Trace Channels
-            uint8 WorldStatic;			// 0
-            uint8 WorldDynamic;			// 1
-            uint8 Pawn;					// 2
-            uint8 Visibility;			// 3
-            uint8 Camera;				// 4
-            uint8 PhysicsBody;			// 5
-            uint8 Vehicle;				// 6
-            uint8 Destructible;			// 7
-
-    }
-    */
-
-    //FString ObjTypeS = "yes";
-    //const FString ObjTypeS = *UEnum::GetDisplayValueAsText(ObjType).ToString();
-    //UE_LOG(LogTemp, Warning, TEXT("%s"), ObjTypeS);
-    //ObjType.ToString();
-    //PrintString(FString::Printf(TEXT(ObjTypeS)));
-
-    //switch (ObjType)
-   // {
-   // }
-
+        if (bDestroyProjectile)
+        {
+            // Destroys the projectile on hit
+            AProjectileObject::Destroy();
+        }
+    }    
 }
 
 void AProjectileObject::DestroySelf()
 {
+    // Destroys the projectile once lifespan runs out
     AProjectileObject::Destroy();
 }
-
-

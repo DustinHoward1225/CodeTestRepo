@@ -7,6 +7,7 @@
 #include "TimerManager.h"
 #include "CodingTestProjCharacter.generated.h"
 
+/** Coding Test Proj Character */
 UCLASS(config=Game)
 class ACodingTestProjCharacter : public ACharacter
 {
@@ -20,7 +21,12 @@ class ACodingTestProjCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
+	/** Place to spawn projectile */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	class USceneComponent* ProjectileSpawnPlace;
+
 public:
+
 	ACodingTestProjCharacter();
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
@@ -29,10 +35,7 @@ public:
 
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
-	float BaseLookUpRate;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-		class USceneComponent* ProjectileSpawnPlace;
+	float BaseLookUpRate;	
 
 protected:
 
@@ -74,30 +77,31 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-
-
 public:
-	
+
+	/** Executes Flailing Animation Montage */
 	void FlailAround();
 
-	UFUNCTION(BlueprintCallable, Category = "YES")
+	/** As it's able to be called from blueprint, this handles bringing the projectile in the game. */
+	UFUNCTION(BlueprintCallable, Category = "Other Functionality")
 	void SpawnProjectile();
-
-		
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "YES")
-		TSubclassOf<AActor> ToSpawn;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Transform")
-		UAnimMontage* SpawnAnimation;
+	/** Handles object or actor of the projectile */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
+	TSubclassOf<AActor> AProjectileObj;
+	
+	/** Animation Montage to play when Flailing */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
+	UAnimMontage* SpawnAnimation;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Transform")
-	float cooldownLength;
+	/** Amount of time during cooldown */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
+	float CooldownLength;
 
 protected:
-	void DelayTime();
-	bool bProjectileCooldown;
+	/** Wait for the cooldown to end */
+	void CooldownDelay();
 
-
-	
+	/** Handler for when fire the projectile during cooldown */
+	bool bProjectileCooldown;	
 };
-

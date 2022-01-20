@@ -46,9 +46,11 @@ ACodingTestProjCharacter::ACodingTestProjCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+	// Spawns a place to spawn the projectile
 	ProjectileSpawnPlace = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSpawnPoint"));
 	ProjectileSpawnPlace->AttachTo(GetCapsuleComponent());
-	//ProjectileSpawnPlace->SetRelativeLocation(FVector(100.f, 0.f, 0.f));
+	ProjectileSpawnPlace->SetRelativeLocation(FVector(100.f, 0.f, 0.f));
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -81,50 +83,10 @@ void ACodingTestProjCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACodingTestProjCharacter::OnResetVR);
 
+	//Action to play Flail animation
 	PlayerInputComponent->BindAction("Flail", IE_Pressed, this, &ACodingTestProjCharacter::FlailAround);
 }
 
-void ACodingTestProjCharacter::FlailAround()
-{
-
-	//GetWorldTimerManager().SetTimer(DelayTimer, this, &AMyCharacterPlayer::DelayReset, 2.0f, false);
-	if (SpawnAnimation)
-		{
-		if (!bProjectileCooldown)
-		{
-			PlayAnimMontage(SpawnAnimation, 1, NAME_None);
-			bProjectileCooldown = true;
-
-			FTimerHandle InputDelayManager;
-			GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::DelayTime, cooldownLength, false);
-		}
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("jljl!"));
-		}
-		else
-		{
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("noanimation!"));
-		}
-}
-void ACodingTestProjCharacter::DelayTime()
-{
-	bProjectileCooldown = false;
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Able to fire again!"));
-}
-
-void ACodingTestProjCharacter::SpawnProjectile()
-{
-	ProjectileSpawnPlace->SetRelativeLocation(FVector(100.f, 0.f, 0.f));
-	const FVector Location = ProjectileSpawnPlace->GetComponentLocation();
-	const FRotator Rotation = ProjectileSpawnPlace->GetComponentRotation();
-	GetWorld()->SpawnActor<AActor>(ToSpawn, Location, Rotation);
-	//GetMesh()->PlayAnimation(SpawnAnimation, false);
-	//GetMesh()->Montage_Play(SpawnAnimation, 1.0f);
-	//ACodingTestProjeCharacter::PlayAnimMontage
-	
-	
-
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
-}
 
 void ACodingTestProjCharacter::OnResetVR()
 {
@@ -186,4 +148,39 @@ void ACodingTestProjCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+}
+
+//////////////////////////////////////////////////////////////////////////
+// Spawn Projectile
+
+void ACodingTestProjCharacter::FlailAround()
+{
+	if (SpawnAnimation)
+	{
+		if (!bProjectileCooldown)
+		{
+			// plays the animation and activates cooldown
+			PlayAnimMontage(SpawnAnimation, 1, NAME_None);
+			bProjectileCooldown = true;
+
+			// activates the delay for the CooldownDelay function
+			FTimerHandle InputDelayManager;
+			GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::CooldownDelay, CooldownLength, false);
+		}
+	}
+}
+
+void ACodingTestProjCharacter::CooldownDelay()
+{
+	// turns off the cooldown and prints on the string to fire the projectile again
+	bProjectileCooldown = false;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Able to fire again!"));
+}
+
+void ACodingTestProjCharacter::SpawnProjectile()
+{
+	// spawns the projectils by using the location and rotation of the provided component
+	const FVector SpawnPlaceLocation = ProjectileSpawnPlace->GetComponentLocation();
+	const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
+	GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
 }

@@ -73,7 +73,9 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileEffect_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+		{ "Comment", "/** Effect Data Table */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Effect Data Table" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewStructOps()
@@ -83,14 +85,18 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Effect_MetaData[] = {
 		{ "Category", "ProjectileEffect" },
+		{ "Comment", "/** Column that lists the effects to take place */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Column that lists the effects to take place" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Effect = { "Effect", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileEffect, Effect), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Effect_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Effect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Description_MetaData[] = {
 		{ "Category", "ProjectileEffect" },
+		{ "Comment", "/** Column that explains what the effects do for better understanding */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Column that explains what the effects do for better understanding" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Description = { "Description", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileEffect, Description), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Description_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileEffect_Statics::NewProp_Description_MetaData)) };
@@ -126,7 +132,7 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FProjectileEffect_Hash() { return 758698334U; }
+	uint32 Get_Z_Construct_UScriptStruct_FProjectileEffect_Hash() { return 1491251213U; }
 	DEFINE_FUNCTION(AProjectileObject::execOnHit)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_HitComponent);
@@ -147,11 +153,6 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		Parms.AffectedActor=AffectedActor;
 		Parms.AffectedObjectType=AffectedObjectType;
 		ProcessEvent(FindFunctionChecked(NAME_AProjectileObject_OnApplyEffect),&Parms);
-	}
-	static FName NAME_AProjectileObject_TestEvent = FName(TEXT("TestEvent"));
-	void AProjectileObject::TestEvent()
-	{
-		ProcessEvent(FindFunctionChecked(NAME_AProjectileObject_TestEvent),NULL);
 	}
 	void AProjectileObject::StaticRegisterNativesAProjectileObject()
 	{
@@ -191,7 +192,9 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ProjectileEffect" },
+		{ "Comment", "/**\n\x09 * Called via input to turn look up/down at a given rate.\n\x09 * @param EffectTable\x09This is the data used to determine which effect is taking place\n\x09 * @param AffectedActor\x09This is the actor that is being effected\n\x09 * @param AffectedObjectType\x09This is object type of the effected actor\n\x09 */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Called via input to turn look up/down at a given rate.\n@param EffectTable   This is the data used to determine which effect is taking place\n@param AffectedActor This is the actor that is being effected\n@param AffectedObjectType    This is object type of the effected actor" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileObject, nullptr, "OnApplyEffect", nullptr, nullptr, sizeof(ProjectileObject_eventOnApplyEffect_Parms), Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams)) };
@@ -263,7 +266,9 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_OnHit_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/**\n\x09 * Called when this hits another object.\n\x09 * @param HitComponent\x09This is what component on the projectile has been hit\n\x09 * @param OtherActor\x09This is the actor that the projectile hit\n\x09 * @param OtherComp\x09This is the component on the other actor that the projectile hit\n\x09 * @param NormalImpulse\x09This is the impulse or 'shock' from the hit\n\x09 * @param Hit\x09This is result from the hit\n\x09 */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Called when this hits another object.\n@param HitComponent  This is what component on the projectile has been hit\n@param OtherActor    This is the actor that the projectile hit\n@param OtherComp     This is the component on the other actor that the projectile hit\n@param NormalImpulse This is the impulse or 'shock' from the hit\n@param Hit   This is result from the hit" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileObject_OnHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileObject, nullptr, "OnHit", nullptr, nullptr, sizeof(ProjectileObject_eventOnHit_Parms), Z_Construct_UFunction_AProjectileObject_OnHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C80401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_OnHit_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnHit_Statics::Function_MetaDataParams)) };
@@ -273,29 +278,6 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AProjectileObject_OnHit_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AProjectileObject_TestEvent_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_TestEvent_Statics::Function_MetaDataParams[] = {
-		{ "Category", "ProjectileEffect" },
-		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileObject_TestEvent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileObject, nullptr, "TestEvent", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_TestEvent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_TestEvent_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AProjectileObject_TestEvent()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AProjectileObject_TestEvent_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -315,31 +297,35 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMeshComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CollisionComponent_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileCollisionComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CollisionComponent;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileCollisionComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovementComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovementComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DestroyProjectile_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bDestroyProjectile_MetaData[];
 #endif
-		static void NewProp_DestroyProjectile_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_DestroyProjectile;
+		static void NewProp_bDestroyProjectile_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDestroyProjectile;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AffectMultipleActors_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bAffectMultipleActors_MetaData[];
 #endif
-		static void NewProp_AffectMultipleActors_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_AffectMultipleActors;
+		static void NewProp_bAffectMultipleActors_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bAffectMultipleActors;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AmtOfActorsToAffect_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AmountOfActorsToAffect_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_AmtOfActorsToAffect;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_AmountOfActorsToAffect;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EffectDataTable_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EffectDataTable;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileLifespan_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ProjectileLifespan;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -349,20 +335,21 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		(UObject* (*)())Z_Construct_UPackage__Script_CodingTestProj,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProjectileObject_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AProjectileObject_OnApplyEffect, "OnApplyEffect" }, // 2308720348
-		{ &Z_Construct_UFunction_AProjectileObject_OnHit, "OnHit" }, // 2549274709
-		{ &Z_Construct_UFunction_AProjectileObject_TestEvent, "TestEvent" }, // 707071885
+		{ &Z_Construct_UFunction_AProjectileObject_OnApplyEffect, "OnApplyEffect" }, // 3461248899
+		{ &Z_Construct_UFunction_AProjectileObject_OnHit, "OnHit" }, // 3456157440
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/** Projectile Object */" },
 		{ "IncludePath", "ProjectileObject.h" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Projectile Object" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMeshComponent_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "Comment", "// Sphere mesh component\n" },
+		{ "Comment", "/** Sphere mesh component */" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
 		{ "ToolTip", "Sphere mesh component" },
@@ -370,67 +357,87 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMeshComponent = { "ProjectileMeshComponent", nullptr, (EPropertyFlags)0x00100000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, ProjectileMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMeshComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileCollisionComponent_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "Comment", "// Sphere collision component\n" },
+		{ "Comment", "/** Sphere collision component */" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
 		{ "ToolTip", "Sphere collision component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent = { "CollisionComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, CollisionComponent), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileCollisionComponent = { "ProjectileCollisionComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, ProjectileCollisionComponent), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileCollisionComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileCollisionComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData[] = {
 		{ "Category", "Movement" },
+		{ "Comment", "/** Projectile movement component */" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Projectile movement component" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent = { "ProjectileMovementComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, ProjectileMovementComponent), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_bDestroyProjectile_MetaData[] = {
 		{ "Category", "Variables" },
+		{ "Comment", "/** Whether or not to destroy the projectile after hitting an object */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Whether or not to destroy the projectile after hitting an object" },
 	};
 #endif
-	void Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile_SetBit(void* Obj)
+	void Z_Construct_UClass_AProjectileObject_Statics::NewProp_bDestroyProjectile_SetBit(void* Obj)
 	{
-		((AProjectileObject*)Obj)->DestroyProjectile = 1;
+		((AProjectileObject*)Obj)->bDestroyProjectile = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile = { "DestroyProjectile", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectileObject), &Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_bDestroyProjectile = { "bDestroyProjectile", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectileObject), &Z_Construct_UClass_AProjectileObject_Statics::NewProp_bDestroyProjectile_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_bDestroyProjectile_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_bDestroyProjectile_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_bAffectMultipleActors_MetaData[] = {
 		{ "Category", "Variables" },
+		{ "Comment", "/** Whether or not to more than one actor */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Whether or not to more than one actor" },
 	};
 #endif
-	void Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors_SetBit(void* Obj)
+	void Z_Construct_UClass_AProjectileObject_Statics::NewProp_bAffectMultipleActors_SetBit(void* Obj)
 	{
-		((AProjectileObject*)Obj)->AffectMultipleActors = 1;
+		((AProjectileObject*)Obj)->bAffectMultipleActors = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors = { "AffectMultipleActors", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectileObject), &Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_bAffectMultipleActors = { "bAffectMultipleActors", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectileObject), &Z_Construct_UClass_AProjectileObject_Statics::NewProp_bAffectMultipleActors_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_bAffectMultipleActors_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_bAffectMultipleActors_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmtOfActorsToAffect_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmountOfActorsToAffect_MetaData[] = {
 		{ "Category", "Variables" },
+		{ "Comment", "/** Amount of actors that the projectile is allowed to affect if it able to affect multiple */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Amount of actors that the projectile is allowed to affect if it able to affect multiple" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmtOfActorsToAffect = { "AmtOfActorsToAffect", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, AmtOfActorsToAffect), METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmtOfActorsToAffect_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmtOfActorsToAffect_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmountOfActorsToAffect = { "AmountOfActorsToAffect", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, AmountOfActorsToAffect), METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmountOfActorsToAffect_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmountOfActorsToAffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable_MetaData[] = {
-		{ "Category", "ProjectileObject" },
+		{ "Category", "Variables" },
+		{ "Comment", "/** Handler for the data that holds the effect */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Handler for the data that holds the effect" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable = { "EffectDataTable", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, EffectDataTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable = { "EffectDataTable", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, EffectDataTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileLifespan_MetaData[] = {
+		{ "Category", "Variables" },
+		{ "Comment", "/** Time before the projectile destroys */" },
+		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
+		{ "ToolTip", "Time before the projectile destroys" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileLifespan = { "ProjectileLifespan", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectileObject, ProjectileLifespan), METADATA_PARAMS(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileLifespan_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileLifespan_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProjectileObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMeshComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_CollisionComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileCollisionComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileMovementComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_DestroyProjectile,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_AffectMultipleActors,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmtOfActorsToAffect,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_bDestroyProjectile,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_bAffectMultipleActors,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_AmountOfActorsToAffect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_EffectDataTable,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileObject_Statics::NewProp_ProjectileLifespan,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AProjectileObject_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AProjectileObject>::IsAbstract,
@@ -459,7 +466,7 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectileObject, 3067907833);
+	IMPLEMENT_CLASS(AProjectileObject, 3864607925);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<AProjectileObject>()
 	{
 		return AProjectileObject::StaticClass();
