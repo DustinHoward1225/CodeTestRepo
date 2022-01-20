@@ -24,8 +24,43 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ACodingTestProjCharacter::execSpawnProjectile)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SpawnProjectile();
+		P_NATIVE_END;
+	}
 	void ACodingTestProjCharacter::StaticRegisterNativesACodingTestProjCharacter()
 	{
+		UClass* Class = ACodingTestProjCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "SpawnProjectile", &ACodingTestProjCharacter::execSpawnProjectile },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::Function_MetaDataParams[] = {
+		{ "Category", "YES" },
+		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "SpawnProjectile", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ACodingTestProjCharacter_NoRegister()
 	{
@@ -34,6 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	struct Z_Construct_UClass_ACodingTestProjCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -72,6 +108,9 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	UObject* (*const Z_Construct_UClass_ACodingTestProjCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_CodingTestProj,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ACodingTestProjCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile, "SpawnProjectile" }, // 462336822
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::Class_MetaDataParams[] = {
@@ -159,11 +198,11 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ACodingTestProjCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ACodingTestProjCharacter_Statics::PropPointers),
 		0,
 		0x008000A4u,
@@ -178,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACodingTestProjCharacter, 1512001570);
+	IMPLEMENT_CLASS(ACodingTestProjCharacter, 2255547001);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<ACodingTestProjCharacter>()
 	{
 		return ACodingTestProjCharacter::StaticClass();

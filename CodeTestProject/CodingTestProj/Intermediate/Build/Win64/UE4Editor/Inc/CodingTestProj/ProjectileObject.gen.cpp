@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileObject() {}
 	CODINGTESTPROJ_API UClass* Z_Construct_UClass_AProjectileObject_NoRegister();
 	CODINGTESTPROJ_API UClass* Z_Construct_UClass_AProjectileObject();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -26,7 +27,6 @@ void EmptyLinkFunctionForGeneratedCodeProjectileObject() {}
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
 // End Cross Module References
 
 static_assert(std::is_polymorphic<FProjectileEffect>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FProjectileEffect cannot be polymorphic unless super FTableRowBase is polymorphic");
@@ -140,11 +140,12 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		P_NATIVE_END;
 	}
 	static FName NAME_AProjectileObject_OnApplyEffect = FName(TEXT("OnApplyEffect"));
-	void AProjectileObject::OnApplyEffect(AActor* AffectedActor, const FString& EffectToTakePlace)
+	void AProjectileObject::OnApplyEffect(UDataTable* EffectTable, AActor* AffectedActor, const FString& AffectedObjectType)
 	{
 		ProjectileObject_eventOnApplyEffect_Parms Parms;
+		Parms.EffectTable=EffectTable;
 		Parms.AffectedActor=AffectedActor;
-		Parms.EffectToTakePlace=EffectToTakePlace;
+		Parms.AffectedObjectType=AffectedObjectType;
 		ProcessEvent(FindFunctionChecked(NAME_AProjectileObject_OnApplyEffect),&Parms);
 	}
 	static FName NAME_AProjectileObject_TestEvent = FName(TEXT("TestEvent"));
@@ -162,34 +163,35 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 	}
 	struct Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics
 	{
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EffectTable;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AffectedActor;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EffectToTakePlace_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AffectedObjectType_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_EffectToTakePlace;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_AffectedObjectType;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectTable = { "EffectTable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ProjectileObject_eventOnApplyEffect_Parms, EffectTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedActor = { "AffectedActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ProjectileObject_eventOnApplyEffect_Parms, AffectedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedObjectType_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace = { "EffectToTakePlace", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ProjectileObject_eventOnApplyEffect_Parms, EffectToTakePlace), METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedObjectType = { "AffectedObjectType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ProjectileObject_eventOnApplyEffect_Parms, AffectedObjectType), METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedObjectType_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedObjectType_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectTable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedActor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_EffectToTakePlace,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::NewProp_AffectedObjectType,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ProjectileEffect" },
-		{ "Comment", "/*const FTableRowBase& EffectTable, */" },
 		{ "ModuleRelativePath", "Public/ProjectileObject.h" },
-		{ "ToolTip", "const FTableRowBase& EffectTable," },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileObject, nullptr, "OnApplyEffect", nullptr, nullptr, sizeof(ProjectileObject_eventOnApplyEffect_Parms), Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileObject_OnApplyEffect_Statics::Function_MetaDataParams)) };
@@ -347,7 +349,7 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		(UObject* (*)())Z_Construct_UPackage__Script_CodingTestProj,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProjectileObject_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AProjectileObject_OnApplyEffect, "OnApplyEffect" }, // 639709907
+		{ &Z_Construct_UFunction_AProjectileObject_OnApplyEffect, "OnApplyEffect" }, // 2308720348
 		{ &Z_Construct_UFunction_AProjectileObject_OnHit, "OnHit" }, // 2549274709
 		{ &Z_Construct_UFunction_AProjectileObject_TestEvent, "TestEvent" }, // 707071885
 	};
@@ -459,7 +461,7 @@ static struct FScriptStruct_CodingTestProj_StaticRegisterNativesFProjectileEffec
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectileObject, 2074720011);
+	IMPLEMENT_CLASS(AProjectileObject, 3298103673);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<AProjectileObject>()
 	{
 		return AProjectileObject::StaticClass();

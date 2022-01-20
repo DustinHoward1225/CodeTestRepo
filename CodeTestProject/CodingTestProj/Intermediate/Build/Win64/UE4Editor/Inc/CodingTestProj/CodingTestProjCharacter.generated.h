@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CODINGTESTPROJ_CodingTestProjCharacter_generated_h
 
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_SPARSE_DATA
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_RPC_WRAPPERS
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSpawnProjectile);
+
+
+#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSpawnProjectile);
+
+
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACodingTestProjCharacter(); \

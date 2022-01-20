@@ -12,6 +12,7 @@ class UPrimitiveComponent;
 class AActor;
 struct FVector;
 struct FHitResult;
+class UDataTable;
 #ifdef CODINGTESTPROJ_ProjectileObject_generated_h
 #error "ProjectileObject.generated.h already included, missing '#pragma once' in ProjectileObject.h"
 #endif
@@ -39,8 +40,9 @@ template<> CODINGTESTPROJ_API UScriptStruct* StaticStruct<struct FProjectileEffe
 #define CodingTestProj_Source_CodingTestProj_Public_ProjectileObject_h_32_EVENT_PARMS \
 	struct ProjectileObject_eventOnApplyEffect_Parms \
 	{ \
+		UDataTable* EffectTable; \
 		AActor* AffectedActor; \
-		FString EffectToTakePlace; \
+		FString AffectedObjectType; \
 	};
 
 

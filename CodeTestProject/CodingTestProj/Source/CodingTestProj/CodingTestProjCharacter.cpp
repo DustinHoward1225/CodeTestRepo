@@ -76,19 +76,34 @@ void ACodingTestProjCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACodingTestProjCharacter::OnResetVR);
 
-	PlayerInputComponent->BindAction("Flail", IE_Pressed, this, &ACodingTestProjCharacter::SpawnProjectile);
+	PlayerInputComponent->BindAction("Flail", IE_Pressed, this, &ACodingTestProjCharacter::FlailAround);
+}
+
+void ACodingTestProjCharacter::FlailAround()
+{
+	if (SpawnAnimation)
+		{
+			PlayAnimMontage(SpawnAnimation, 1, NAME_None);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("jljl!"));
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("noanimation!"));
+		}
 }
 
 void ACodingTestProjCharacter::SpawnProjectile()
 {
 	const FVector Location = ProjectileSpawnPlace->GetComponentLocation();
 	const FRotator Rotation = ProjectileSpawnPlace->GetComponentRotation();
-
-	//GetMesh()->PlayAnimation(SpawnAnimation, false);
-	GetMesh()->PlayAnimMontage(SpawnAnimation, 1.0f);
-
 	GetWorld()->SpawnActor<AActor>(ToSpawn, Location, Rotation);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
+	//GetMesh()->PlayAnimation(SpawnAnimation, false);
+	//GetMesh()->Montage_Play(SpawnAnimation, 1.0f);
+	//ACodingTestProjeCharacter::PlayAnimMontage
+	
+	
+
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
 }
 
 void ACodingTestProjCharacter::OnResetVR()

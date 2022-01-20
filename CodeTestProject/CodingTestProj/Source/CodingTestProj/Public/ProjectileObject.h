@@ -75,7 +75,7 @@ protected:
 		void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 	
 	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
-		void OnApplyEffect(/*const FTableRowBase& EffectTable, */ AActor * AffectedActor, const FString& EffectToTakePlace);
+		void OnApplyEffect(UDataTable* EffectTable,  AActor * AffectedActor, const FString& AffectedObjectType);
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
 		void TestEvent();

@@ -20,7 +20,7 @@ class ACodingTestProjCharacter : public ACharacter
 	class UCameraComponent* FollowCamera;
 
 	UPROPERTY(visibleAnywhere)
-		class USceneComponent* ProjectileSpawnPlace;
+	class USceneComponent* ProjectileSpawnPlace;
 public:
 	ACodingTestProjCharacter();
 
@@ -74,6 +74,9 @@ public:
 
 public:
 	
+	void FlailAround();
+
+	UFUNCTION(BlueprintCallable, Category = "YES")
 	void SpawnProjectile();
 
 		

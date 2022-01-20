@@ -29,12 +29,12 @@ AProjectileObject::AProjectileObject()
     if (!ProjectileMeshComponent)
     {
         ProjectileMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
-        ProjectileMeshComponent->AttachTo(RootComponent);
+        //ProjectileMeshComponent->AttachTo(RootComponent);
         static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
         if (Mesh.Succeeded())
         {
             ProjectileMeshComponent->SetStaticMesh(Mesh.Object);
-            ProjectileMeshComponent->AttachTo(RootComponent);
+            //ProjectileMeshComponent->AttachTo(RootComponent);
         }
         //const FVector Empty = (0.0f,0.0f,0.0f);
         
@@ -117,13 +117,14 @@ void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
     {
         static const FString ContextString(TEXT("Effect Context"));
         FProjectileEffect* TableRow = EffectDataTable->FindRow<FProjectileEffect>(FName(ObjTypeS), ContextString, true);
+        //const FProjectileEffect& oof = EffectDataTable;
         if (TableRow)
         {
             
             //const FProjectileEffect& ProjectileTable = ProjectileEff;
             if (AmtOfActorsToAffect > 0)
             {
-                OnApplyEffect(/*EffectDataTable, */OtherActor, ObjTypeS);
+                OnApplyEffect(EffectDataTable, OtherActor, ObjTypeS);
                 AmtOfActorsToAffect--;
             }
             
