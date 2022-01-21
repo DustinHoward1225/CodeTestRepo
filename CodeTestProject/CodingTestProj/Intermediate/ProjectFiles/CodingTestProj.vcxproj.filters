@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CodingTestProj.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6F15E38C-3638-411F-94EF-DA2334313B16}</UniqueIdentifier>
+      <UniqueIdentifier>{BA8F10FA-F589-43F4-962C-D8D83584F227}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CodingTestProj.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{8F9FEEBB-B3D3-46AE-8932-E34DBE5E5D31}</UniqueIdentifier>
+      <UniqueIdentifier>{6BC513B6-A913-4CE7-9AA7-FC390B0D7970}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CodingTestProj">
-      <UniqueIdentifier>{64FF4A48-45F5-4E6E-9521-59B46D4FFB05}</UniqueIdentifier>
+      <UniqueIdentifier>{9ADD49F9-A861-4C9E-AA73-5790C322C97D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CodingTestProj\CodingTestProj.Build.cs">
       <Filter>Source\CodingTestProj</Filter>
@@ -54,7 +54,7 @@
       <Filter>Source\CodingTestProj</Filter>
     </ClInclude>
     <Filter Include="Source\CodingTestProj\Private">
-      <UniqueIdentifier>{220736B6-B713-485A-AA8F-F650C6FC6EDA}</UniqueIdentifier>
+      <UniqueIdentifier>{B1ECBDD8-1E2A-483C-A996-BC30D75E105E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\CodingTestProj\Private\MainHud.cpp">
       <Filter>Source\CodingTestProj\Private</Filter>
@@ -78,7 +78,7 @@
       <Filter>Source\CodingTestProj\Private</Filter>
     </ClCompile>
     <Filter Include="Source\CodingTestProj\Public">
-      <UniqueIdentifier>{81F015FC-F3EF-4938-BE2C-C4306E6BF6C1}</UniqueIdentifier>
+      <UniqueIdentifier>{E6E8B366-562C-42F3-BCD9-F21C07C4879E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\CodingTestProj\Public\MainHud.h">
       <Filter>Source\CodingTestProj\Public</Filter>

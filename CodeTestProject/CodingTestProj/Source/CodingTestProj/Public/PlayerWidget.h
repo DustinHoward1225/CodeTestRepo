@@ -8,6 +8,7 @@
 #include "Blueprint/UserWidget.h"
 #include "PlayerWidget.generated.h"
 
+class ACodingTestProjCharacter;
 /**
  * 
  */
@@ -28,6 +29,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UProgressBar* CooldownBar;
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite/*/, meta = (BindWidget) */ )
-		//TSubclassOf<ACodingTestprojCharacter> Character;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite/*/, meta = (BindWidget) */ )
+		AActor* Character;
 };

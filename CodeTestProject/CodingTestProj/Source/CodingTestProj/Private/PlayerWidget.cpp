@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-
+//#include "CodingTestProjCharacter.h"
 #include "PlayerWidget.h"
 
 UPlayerWidget::UPlayerWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
@@ -9,9 +9,14 @@ UPlayerWidget::UPlayerWidget(const FObjectInitializer& ObjectInitializer) : Supe
 }
 void UPlayerWidget::UpdateCooldownAmount(float Value)
 {
-	//if (Character->bProjectileCooldown)
+	//ACodingTestProjCharacter* OtherChar;
+	//if (Character = OtherChar)
 	//{
-		//CooldownBar.Value = Character->CooldownLength / Character->CooldownMax;
+//
+	//}
+	//if (OtherChar->bProjectileCooldown)
+	//{
+	//	CooldownBar.Value = OtherChar->CooldownLength / OtherChar->CooldownMax;
 	//}
 }
 
