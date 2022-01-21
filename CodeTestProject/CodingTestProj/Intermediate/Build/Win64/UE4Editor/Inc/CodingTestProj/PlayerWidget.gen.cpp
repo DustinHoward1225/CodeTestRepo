@@ -18,7 +18,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_CodingTestProj();
 	UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	CODINGTESTPROJ_API UClass* Z_Construct_UClass_ACodingTestProjCharacter_NoRegister();
 // End Cross Module References
 	void UPlayerWidget::StaticRegisterNativesUPlayerWidget()
 	{
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 		{ "ToolTip", "/, meta = (BindWidget)" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character = { "Character", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerWidget, Character), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character = { "Character", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerWidget, Character), Z_Construct_UClass_ACodingTestProjCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character,
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerWidget, 2157560567);
+	IMPLEMENT_CLASS(UPlayerWidget, 2118623627);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<UPlayerWidget>()
 	{
 		return UPlayerWidget::StaticClass();

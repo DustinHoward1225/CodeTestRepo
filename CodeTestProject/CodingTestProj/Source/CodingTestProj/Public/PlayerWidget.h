@@ -29,6 +29,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UProgressBar* CooldownBar;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite/*/, meta = (BindWidget) */ )
-		AActor* Character;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite/*/, meta = (BindWidget) */ )
+		//ACodingTestProjCharacter* Character;
 };
