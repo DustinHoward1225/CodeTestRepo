@@ -104,6 +104,10 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SpawnAnimation;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CooldownMax_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CooldownMax;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CooldownLength_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CooldownLength;
@@ -197,14 +201,23 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_SpawnAnimation = { "SpawnAnimation", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACodingTestProjCharacter, SpawnAnimation), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_SpawnAnimation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_SpawnAnimation_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownMax_MetaData[] = {
 		{ "Category", "Projectile Spawn" },
-		{ "Comment", "/** Amount of time during cooldown */" },
+		{ "Comment", "/** Maximum amount of time for cooldown */" },
 		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
-		{ "ToolTip", "Amount of time during cooldown" },
+		{ "ToolTip", "Maximum amount of time for cooldown" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength = { "CooldownLength", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACodingTestProjCharacter, CooldownLength), METADATA_PARAMS(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownMax = { "CooldownMax", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACodingTestProjCharacter, CooldownMax), METADATA_PARAMS(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownMax_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownMax_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength_MetaData[] = {
+		{ "Category", "Projectile Spawn" },
+		{ "Comment", "/** Amount of time it has left durning cooldown */" },
+		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ToolTip", "Amount of time it has left durning cooldown" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength = { "CooldownLength", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACodingTestProjCharacter, CooldownLength), METADATA_PARAMS(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACodingTestProjCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_FollowCamera,
@@ -213,6 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_AProjectileObj,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_SpawnAnimation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownMax,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownLength,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACodingTestProjCharacter_Statics::StaticCppClassTypeInfo = {
@@ -242,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACodingTestProjCharacter, 1670392306);
+	IMPLEMENT_CLASS(ACodingTestProjCharacter, 525072588);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<ACodingTestProjCharacter>()
 	{
 		return ACodingTestProjCharacter::StaticClass();

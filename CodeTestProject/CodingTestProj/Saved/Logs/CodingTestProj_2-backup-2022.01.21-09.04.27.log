@@ -1,0 +1,1247 @@
+﻿Log file open, 01/21/22 04:04:13
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: CodingTestProj
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 17 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.213882
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.26-CL-15973114
+LogInit: Engine Version: 4.26.2-15973114+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: AMD Ryzen 7 3700X 8-Core Processor             , GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Apr 12 2021 06:14:10
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line:  /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap -game -PIEVIACONSOLE -Multiprocess -server -log GameUserSettingsINI=C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/PIEGameUserSettings0.ini -MultiprocessSaveConfig -MultiprocessOSS -messaging -SessionName="Play in Standalone Game" -port=17777 -windowed
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.01.21-09.04.14:338][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2022.01.21-09.04.14:339][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.01.21-09.04.14:339][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+[2022.01.21-09.04.14:339][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.01.21-09.04.14:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+[2022.01.21-09.04.14:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+[2022.01.21-09.04.14:340][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.01.21-09.04.14:341][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.01.21-09.04.14:343][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.01.21-09.04.14:343][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.01.21-09.04.14:344][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.01.21-09.04.14:344][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.01.21-09.04.14:344][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.01.21-09.04.14:345][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.01.21-09.04.14:345][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.01.21-09.04.14:345][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.01.21-09.04.14:346][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.01.21-09.04.14:346][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.01.21-09.04.14:346][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.01.21-09.04.14:347][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.01.21-09.04.14:347][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+[2022.01.21-09.04.14:347][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.01.21-09.04.14:348][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.01.21-09.04.14:348][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.01.21-09.04.14:348][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.01.21-09.04.14:349][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.01.21-09.04.14:349][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.01.21-09.04.14:349][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.01.21-09.04.14:350][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.01.21-09.04.14:350][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.01.21-09.04.14:350][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.01.21-09.04.14:351][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.01.21-09.04.14:351][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.01.21-09.04.14:351][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.01.21-09.04.14:351][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.01.21-09.04.14:352][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+[2022.01.21-09.04.14:352][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+[2022.01.21-09.04.14:353][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:353][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.01.21-09.04.14:353][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.01.21-09.04.14:354][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:354][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.01.21-09.04.14:354][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:355][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.01.21-09.04.14:355][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.01.21-09.04.14:355][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.01.21-09.04.14:356][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.01.21-09.04.14:356][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.01.21-09.04.14:356][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.01.21-09.04.14:357][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.01.21-09.04.14:359][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.01.21-09.04.14:360][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.01.21-09.04.14:360][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.01.21-09.04.14:360][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.01.21-09.04.14:361][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.01.21-09.04.14:361][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.01.21-09.04.14:361][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.01.21-09.04.14:362][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.01.21-09.04.14:362][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.01.21-09.04.14:362][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.01.21-09.04.14:362][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.01.21-09.04.14:363][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:363][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.01.21-09.04.14:363][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.01.21-09.04.14:364][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.01.21-09.04.14:364][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.01.21-09.04.14:365][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.01.21-09.04.14:365][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.01.21-09.04.14:365][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.01.21-09.04.14:366][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.01.21-09.04.14:366][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.01.21-09.04.14:366][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.01.21-09.04.14:367][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.01.21-09.04.14:367][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.01.21-09.04.14:367][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.01.21-09.04.14:368][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.01.21-09.04.14:368][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.01.21-09.04.14:368][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.01.21-09.04.14:369][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.01.21-09.04.14:369][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.01.21-09.04.14:369][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.01.21-09.04.14:370][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.01.21-09.04.14:370][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.01.21-09.04.14:370][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.01.21-09.04.14:370][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.01.21-09.04.14:371][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.01.21-09.04.14:371][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.01.21-09.04.14:371][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.01.21-09.04.14:372][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.01.21-09.04.14:372][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.01.21-09.04.14:372][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.01.21-09.04.14:373][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.01.21-09.04.14:375][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:375][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.01.21-09.04.14:376][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.01.21-09.04.14:376][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.01.21-09.04.14:376][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.01.21-09.04.14:377][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.01.21-09.04.14:377][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.01.21-09.04.14:377][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.01.21-09.04.14:378][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.01.21-09.04.14:378][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.01.21-09.04.14:378][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:379][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.01.21-09.04.14:379][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.01.21-09.04.14:379][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.01.21-09.04.14:380][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.01.21-09.04.14:380][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.01.21-09.04.14:380][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.01.21-09.04.14:381][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.01.21-09.04.14:381][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.01.21-09.04.14:381][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.01.21-09.04.14:382][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.01.21-09.04.14:382][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.01.21-09.04.14:382][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.01.21-09.04.14:383][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.01.21-09.04.14:383][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.01.21-09.04.14:383][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.01.21-09.04.14:384][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.01.21-09.04.14:384][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.01.21-09.04.14:384][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.01.21-09.04.14:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.01.21-09.04.14:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.01.21-09.04.14:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.01.21-09.04.14:386][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.01.21-09.04.14:386][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.01.21-09.04.14:386][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.01.21-09.04.14:387][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.01.21-09.04.14:387][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.01.21-09.04.14:387][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.01.21-09.04.14:387][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:388][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.01.21-09.04.14:388][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.01.21-09.04.14:388][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:389][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.01.21-09.04.14:392][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.01.21-09.04.14:392][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.01.21-09.04.14:392][  0]LogInit: Selected Device Profile: [Windows]
+[2022.01.21-09.04.14:392][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2022.01.21-09.04.14:393][  0]LogHAL: Display: Platform has ~ 16 GB [17128480768 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.01.21-09.04.14:393][  0]LogInit: Going up to parent DeviceProfile []
+[2022.01.21-09.04.14:393][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:394][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.01.21-09.04.14:394][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.01.21-09.04.14:394][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:395][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.01.21-09.04.14:395][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:395][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.01.21-09.04.14:396][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.01.21-09.04.14:396][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.01.21-09.04.14:396][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.01.21-09.04.14:397][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.01.21-09.04.14:397][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.01.21-09.04.14:397][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.01.21-09.04.14:398][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.01.21-09.04.14:398][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.01.21-09.04.14:398][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.01.21-09.04.14:399][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.01.21-09.04.14:399][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.01.21-09.04.14:399][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.01.21-09.04.14:400][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.01.21-09.04.14:400][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.01.21-09.04.14:400][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.01.21-09.04.14:400][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.01.21-09.04.14:401][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.01.21-09.04.14:401][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:401][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.01.21-09.04.14:402][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.01.21-09.04.14:402][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.01.21-09.04.14:402][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.01.21-09.04.14:403][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.01.21-09.04.14:403][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.01.21-09.04.14:403][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.01.21-09.04.14:404][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.01.21-09.04.14:404][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.01.21-09.04.14:404][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.01.21-09.04.14:405][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.01.21-09.04.14:407][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.01.21-09.04.14:408][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.01.21-09.04.14:408][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.01.21-09.04.14:409][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.01.21-09.04.14:410][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.01.21-09.04.14:410][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.01.21-09.04.14:410][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.01.21-09.04.14:411][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.01.21-09.04.14:411][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.01.21-09.04.14:411][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.01.21-09.04.14:412][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.01.21-09.04.14:412][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.01.21-09.04.14:412][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.01.21-09.04.14:412][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.01.21-09.04.14:413][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.01.21-09.04.14:413][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.01.21-09.04.14:413][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.01.21-09.04.14:414][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.01.21-09.04.14:414][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.01.21-09.04.14:415][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:415][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.01.21-09.04.14:415][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.01.21-09.04.14:416][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.01.21-09.04.14:416][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.01.21-09.04.14:416][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.01.21-09.04.14:416][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.01.21-09.04.14:417][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.01.21-09.04.14:417][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.01.21-09.04.14:417][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.01.21-09.04.14:418][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:418][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.01.21-09.04.14:418][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.01.21-09.04.14:419][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.01.21-09.04.14:419][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.01.21-09.04.14:419][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.01.21-09.04.14:420][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.01.21-09.04.14:420][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.01.21-09.04.14:420][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.01.21-09.04.14:421][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.01.21-09.04.14:423][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.01.21-09.04.14:423][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.01.21-09.04.14:424][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.01.21-09.04.14:424][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.01.21-09.04.14:424][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.01.21-09.04.14:425][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.01.21-09.04.14:425][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.01.21-09.04.14:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.01.21-09.04.14:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.01.21-09.04.14:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.01.21-09.04.14:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.01.21-09.04.14:427][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.01.21-09.04.14:427][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.01.21-09.04.14:427][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.01.21-09.04.14:428][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.01.21-09.04.14:428][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.01.21-09.04.14:428][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.01.21-09.04.14:429][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.01.21-09.04.14:429][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:429][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.01.21-09.04.14:430][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.01.21-09.04.14:430][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Scalability.ini]
+[2022.01.21-09.04.14:430][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.01.21-09.04.14:431][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.01.21-09.04.14:431][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.01.21-09.04.14:431][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.01.21-09.04.14:432][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.01.21-09.04.14:432][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.01.21-09.04.14:432][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.01.21-09.04.14:433][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Engine.ini]
+[2022.01.21-09.04.14:433][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Saved/Config/Windows/Editor.ini]
+[2022.01.21-09.04.14:433][  0]LogInit: Computer: DESKTOP-KH29A7I
+[2022.01.21-09.04.14:434][  0]LogInit: User: dusti
+[2022.01.21-09.04.14:434][  0]LogInit: CPU Page size=4096, Cores=8
+[2022.01.21-09.04.14:434][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.01.21-09.04.14:435][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2022.01.21-09.04.14:435][  0]LogMemory: Platform Memory Stats for Windows
+[2022.01.21-09.04.14:435][  0]LogMemory: Process Physical Memory: 127.60 MB used, 127.60 MB peak
+[2022.01.21-09.04.14:436][  0]LogMemory: Process Virtual Memory: 101.21 MB used, 101.21 MB peak
+[2022.01.21-09.04.14:436][  0]LogMemory: Physical Memory: 11196.94 MB used,  5138.05 MB free, 16334.99 MB total
+[2022.01.21-09.04.14:436][  0]LogMemory: Virtual Memory: 134214424.00 MB used,  3301.61 MB free, 134217728.00 MB total
+[2022.01.21-09.04.14:442][  0]LogWindows: WindowsPlatformFeatures disabled or dedicated server build
+[2022.01.21-09.04.14:464][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.01.21-09.04.14:465][  0]LogInit: Using OS detected language (en-US).
+[2022.01.21-09.04.14:465][  0]LogInit: Using OS detected locale (en-US).
+[2022.01.21-09.04.14:468][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2022.01.21-09.04.14:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2022.01.21-09.04.14:816][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.01.21-09.04.14:823][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.01.21-09.04.14:830][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.01.21-09.04.14:830][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2022.01.21-09.04.14:835][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.01.21-09.04.14:876][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.01.21-09.04.14:876][  0]LogShaderCompilers: Guid format shader working directory is -63 characters bigger than the processId version (../../../../../../Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Intermediate/Shaders/WorkingDirectory/17300/).
+[2022.01.21-09.04.14:877][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/dusti/AppData/Local/Temp/UnrealShaderWorkingDir/F98886094883E30A721FD482DE7FAC7E/'.
+[2022.01.21-09.04.14:878][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2022.01.21-09.04.14:878][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2022.01.21-09.04.15:273][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2022.01.21-09.04.15:340][  0]LogDerivedDataCache: Loaded boot cache 0.07s 85MB C:/Users/dusti/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.01.21-09.04.15:340][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/dusti/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2022.01.21-09.04.15:342][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.01.21-09.04.15:342][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2022.01.21-09.04.15:342][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.01.21-09.04.15:343][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2022.01.21-09.04.15:355][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2022.01.21-09.04.15:355][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.01.21-09.04.15:356][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2022.01.21-09.04.15:362][  0]LogDerivedDataCache: Speed tests for C:/Users/dusti/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.01 seconds
+[2022.01.21-09.04.15:362][  0]LogDerivedDataCache: Display: Performance to C:/Users/dusti/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=1524.08MBs, RandomWriteSpeed=186.90MBs. Assigned SpeedClass 'Local'
+[2022.01.21-09.04.15:364][  0]LogDerivedDataCache: Using Local data cache path C:/Users/dusti/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.01.21-09.04.15:365][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.01.21-09.04.15:365][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2022.01.21-09.04.15:368][  0]LogInit: Using OS detected language (en-US).
+[2022.01.21-09.04.15:369][  0]LogInit: Using OS detected locale (en-US).
+[2022.01.21-09.04.15:369][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2022.01.21-09.04.15:370][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2022.01.21-09.04.15:372][  0]LogTextLocalizationManager: Compacting localization data took   0.01ms
+[2022.01.21-09.04.15:375][  0]LogAssetRegistry: FAssetRegistry took 0.0018 seconds to start up
+[2022.01.21-09.04.15:518][  0]LogPackageLocalizationCache: Processed 22 localized package path(s) for 1 prioritized culture(s) in 0.000858 seconds
+[2022.01.21-09.04.15:581][  0]LogInit: Selected Device Profile: [Windows]
+[2022.01.21-09.04.15:581][  0]LogInit: Active device profile: [000001AE14C8B900][000001AE10863A00 49] Windows
+[2022.01.21-09.04.15:582][  0]LogInit: Profiles: [000001AE14C8B900][000001AE10863A00 49] Windows, [000001AE14C2F000][000001AE10871CC0 49] WindowsNoEditor, [000001AE14C88E00][000001AE108742C0 49] WindowsServer, [000001AE14C2D400][000001AE10878580 49] WindowsClient, [000001AE14C8A800][000001AE1087C840 49] IOS, [000001AE14C2C300][000001AE10880B00 49] iPadAir, [000001AE14C8BB00][000001AE10866D80 49] iPadAir2, [000001AE14BE2900][000001AE1089F280 49] IPadPro, [000001AE14BE2A00][000001AE108852C0 49] iPadAir3, [000001AE14C2CB00][000001AE10897580 49] iPadAir4, [000001AE14BE2600][000001AE10893840 49] iPadMini2, [000001AE14C2D600][000001AE1089BB00 49] iPadMini3, [000001AE14BE1300][000001AE108A8100 49] iPadMini4, [000001AE14C2E600][000001AE108AC3C0 49] iPadMini5, [000001AE14C16200][000001AE108C0900 49] iPhone6, [000001AE14C16300][000001AE108B0940 49] iPodTouch6, [000001AE14BE1600][000001AE108C4E40 49] iPhone7, [000001AE14BE1500][000001AE108B8E80 49] iPodTouch7, [000001AE14C17900][000001AE10889100 49] iPhone5S, [000001AE14BE3F00][000001AE108B53C0 49] iPhone6Plus, [000001AE14C15600][000001AE108C9680 49] iPhone6S, [000001AE14BE2500][000001AE108CD940 49] iPhone6SPlus, [000001AE14C14500][000001AE108D1C00 49] iPhone7Plus, [000001AE14BE0200][000001AE108D4200 49] iPhoneSE, [000001AE14C16E00][000001AE108D84C0 49] iPhone8, [000001AE14BE3800][000001AE108DC780 49] iPhone8Plus, [000001AE14C15900][000001AE108E0A40 49] iPhoneX, [000001AE14BE2100][000001AE108E4D00 49] iPhoneXS, [000001AE14C15200][000001AE108BCF80 49] iPhoneXSMax, [000001AE14BE3200][000001AE108E9200 49] iPhoneXR, [000001AE14C14C00][000001AE108F14C0 49] iPhone11, [000001AE14BE0E00][000001AE108F5780 49] iPhone11Pro, [000001AE14C15500][000001AE108F9A40 49] iPhone11ProMax, [000001AE14BE2F00][000001AE108FDD00 49] iPhoneSE2, [000001AE14C17B00][000001AE10900300 49] iPhone12Mini, [000001AE14BE2B00][000001AE109045C0 49] iPhone12, [000001AE14C17F00][000001AE10908880 49] iPhone12Pro, [000001AE14BE0700][000001AE1090CB40 49] iPhone12ProMax, [000001AE14BE0B00][000001AE10910E00 49] iPadPro105, [000001AE14C8AA00][000001AE108ED080 49] iPadPro129, [000001AE14C89400][000001AE10915300 49] iPadPro97, [000001AE14C14700][000001AE1091D5C0 49] iPadPro2_129, [000001AE14C8A900][000001AE10921880 49] iPad5, [000001AE14C16600][000001AE10925B40 49] iPad6, [000001AE14C89800][000001AE10928140 49] iPad7, [000001AE14C17800][000001AE1092C400 49] iPad8, [000001AE14BE3C00][000001AE109306C0 49] iPadPro11, [000001AE14C15A00][000001AE10934980 49] iPadPro2_11, [000001AE14BE0600][000001AE10938C40 49] iPadPro3_129, [000001AE14C15D00][000001AE1093CF00 49] iPadPro4_129, [000001AE14BE3000][000001AE10919180 49] AppleTV, [000001AE14C17700][000001AE10941400 49] AppleTV4K, [000001AE14BE3E00][000001AE109496C0 49] TVOS, [000001AE14C14E00][000001AE1094D980 49] Mac, [000001AE14BE1F00][000001AE10951C40 49] MacClient, [000001AE14C15E00][000001AE10954240 49] MacNoEditor, [000001AE14BE0F00][000001AE10958500 49] MacServer, [000001AE14C17100][000001AE1095C7C0 49] Linux, [000001AE14BE1200][000001AE10960A80 49] LinuxAArch64, [000001AE14C17500][000001AE10964D40 49] LinuxNoEditor, [000001AE14BE3700][000001AE10969000 49] LinuxAArch64NoEditor, [000001AE14C15100][000001AE10945280 49] LinuxClient, [000001AE14BE1100][000001AE1096D500 49] LinuxAArch64Client, [000001AE14C14100][000001AE109757C0 49] LinuxServer, [000001AE14BE2800][000001AE10979A80 49] LinuxAArch64Server, [000001AE14C17600][000001AE1097DD40 49] Android, [000001AE14BE1B00][000001AE10980340 49] Android_Low, [000001AE14C16A00][000001AE10984600 49] Android_Mid, [000001AE14BE3400][000001AE109888C0 49] Android_High, [000001AE14C17C00][000001AE1098CB80 49] Android_Default, [000001AE14BE1C00][000001AE10990E40 49] Android_Adreno4xx, [000001AE14C14A00][000001AE10995100 49] Android_Adreno5xx_Low, [000001AE14BE2700][000001AE10971380 49] Android_Adreno5xx, [000001AE14C14D00][000001AE10999600 49] Android_Adreno6xx, [000001AE14BE3B00][000001AE109A18C0 49] Android_Adreno6xx_Vulkan, [000001AE14C14600][000001AE109A5B80 49] Android_Mali_T6xx, [000001AE14BE2E00][000001AE109A8180 49] Android_Mali_T7xx, [000001AE14C16500][000001AE109AC440 49] Android_Mali_T8xx, [000001AE14BE0900][000001AE101A0700 49] Android_Mali_G71, [000001AE14C16100][000001AE101A49C0 49] Android_Mali_G72, [000001AE14BE0100][000001AE101A8C80 49] Android_Mali_G72_Vulkan, [000001AE14C16700][000001AE101ACF40 49] Android_Mali_G76, [000001AE14BE1400][000001AE101B1200 49] Android_Mali_G76_Vulkan, [000001AE14C15B00][000001AE1099D480 49] Android_Mali_G77, [000001AE14BE2C00][000001AE101B5700 49] Android_Mali_G77_Vulkan, [000001AE14C14B00][000001AE101BD9C0 49] Android_Vulkan_SM5, [000001AE14BE0500][000001AE101C1C80 49] Android_PowerVR_G6xxx, [000001AE14C16C00][000001AE101C4280 49] Android_PowerVR_GT7xxx, [000001AE14C88100][000001AE101C8540 49] Android_PowerVR_GE8xxx, [000001AE14C2F200][000001AE101CC800 49] Android_PowerVR_GM9xxx, [000001AE14C89100][000001AE101D0AC0 49] Android_PowerVR_GM9xxx_Vulkan, [000001AE14C2FD00][000001AE101D4D80 49] Android_TegraK1, [000001AE14C8B800][000001AE101D9040 49] Android_Unknown_Vulkan, [000001AE14C2E200][000001AE101DD300 49] Lumin, [000001AE14C8B000][000001AE101B9580 49] Lumin_Desktop, [000001AE14C2DC00][000001AE101E1800 49] HoloLens, 
+[2022.01.21-09.04.15:608][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.01.21-09.04.15:608][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.01.21-09.04.15:609][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.01.21-09.04.15:609][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.01.21-09.04.15:609][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.01.21-09.04.15:621][  0]LogNetVersion: CodingTestProj 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 921537367)
+[2022.01.21-09.04.15:715][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.01.21-09.04.15:887][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.01.21-09.04.15:890][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.01.21-09.04.16:057][  0]SourceControl: Source control is disabled
+[2022.01.21-09.04.16:058][  0]SourceControl: Source control is disabled
+[2022.01.21-09.04.16:061][  0]SourceControl: Source control is disabled
+[2022.01.21-09.04.16:065][  0]LogUProjectInfo: Found projects:
+[2022.01.21-09.04.16:135][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.01.21-09.04.16:148][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.01.21-09.04.16:148][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.01.21-09.04.16:181][  0]LogOcInput: OculusInput pre-init called
+[2022.01.21-09.04.16:189][  0]LogUObjectArray: 20965 objects as part of root set at end of initial load.
+[2022.01.21-09.04.16:189][  0]LogUObjectAllocator: 5743696 out of 0 bytes used by permanent object pool.
+[2022.01.21-09.04.16:190][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.01.21-09.04.16:225][  0]LogEngine: Initializing Engine...
+[2022.01.21-09.04.16:226][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.01.21-09.04.16:236][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.01.21-09.04.16:236][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.01.21-09.04.16:238][  0]LogInit: Texture streaming: Disabled
+[2022.01.21-09.04.16:265][  0]LogInit: Display: Game Engine Initialized.
+[2022.01.21-09.04.16:266][  0]LogNiagaraEditor: GEditor isn't valid! Particle reset commands will not work for Niagara components!
+[2022.01.21-09.04.16:288][  0]LogInit: Display: Starting Game.
+[2022.01.21-09.04.16:288][  0]LogNet: Browse: /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?Name=Player
+[2022.01.21-09.04.16:288][  0]LogLoad: LoadMap: /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?Name=Player
+[2022.01.21-09.04.16:289][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2022.01.21-09.04.16:291][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.01.21-09.04.16:299][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2022.01.21-09.04.16:359][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2022.01.21-09.04.16:359][  0]LogLoad: Game class is 'NewGameMode_C'
+[2022.01.21-09.04.16:360][  0]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2022.01.21-09.04.16:360][  0]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2022.01.21-09.04.16:361][  0]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2022.01.21-09.04.16:361][  0]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2022.01.21-09.04.16:361][  0]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.01.21-09.04.16:361][  0]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 17777
+[2022.01.21-09.04.16:363][  0]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 30) at 2022.01.21-04.04.16
+[2022.01.21-09.04.16:364][  0]LogWorld: Bringing up level for play took: 0.001439
+[2022.01.21-09.04.16:364][  0]LogLoad: Took 0.075257 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap)
+[2022.01.21-09.04.16:370][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.01.21-09.04.16:370][  0]LogLoad: (Engine Initialization) Total time: 3.72 seconds
+[2022.01.21-09.04.16:371][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.01.21-09.04.16:371][  0]LogInit: First time updating LLM stats...
+[2022.01.21-09.04.16:438][  1]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.066261
+[2022.01.21-09.04.16:438][  1]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0001
+[2022.01.21-09.04.16:471][  2]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.099273
+[2022.01.21-09.04.16:471][  2]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0002
+[2022.01.21-09.04.16:505][  3]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.13329
+[2022.01.21-09.04.16:505][  3]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0003
+[2022.01.21-09.04.16:538][  4]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.166617
+[2022.01.21-09.04.16:538][  4]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0004
+[2022.01.21-09.04.16:571][  5]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.199623
+[2022.01.21-09.04.16:571][  5]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0005
+[2022.01.21-09.04.16:605][  6]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.233625
+[2022.01.21-09.04.16:605][  6]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0006
+[2022.01.21-09.04.16:639][  7]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.267156
+[2022.01.21-09.04.16:639][  7]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0007
+[2022.01.21-09.04.16:672][  8]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.300187
+[2022.01.21-09.04.16:681][  8]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0008
+[2022.01.21-09.04.16:705][  9]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.333628
+[2022.01.21-09.04.16:705][  9]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0009
+[2022.01.21-09.04.16:739][ 10]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.366677
+[2022.01.21-09.04.16:739][ 10]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.001
+[2022.01.21-09.04.16:773][ 11]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.400693
+[2022.01.21-09.04.16:773][ 11]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0011
+[2022.01.21-09.04.16:806][ 12]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.433703
+[2022.01.21-09.04.16:806][ 12]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0012
+[2022.01.21-09.04.16:839][ 13]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.466712
+[2022.01.21-09.04.16:839][ 13]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0013
+[2022.01.21-09.04.16:872][ 14]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.499727
+[2022.01.21-09.04.16:872][ 14]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0014
+[2022.01.21-09.04.16:905][ 15]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.5327
+[2022.01.21-09.04.16:905][ 15]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0015
+[2022.01.21-09.04.16:938][ 16]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.565699
+[2022.01.21-09.04.16:938][ 16]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0016
+[2022.01.21-09.04.16:971][ 17]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.599635
+[2022.01.21-09.04.16:971][ 17]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0017
+[2022.01.21-09.04.17:005][ 18]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.632708
+[2022.01.21-09.04.17:005][ 18]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0018
+[2022.01.21-09.04.17:039][ 19]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.666714
+[2022.01.21-09.04.17:039][ 19]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0019
+[2022.01.21-09.04.17:072][ 20]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.700644
+[2022.01.21-09.04.17:072][ 20]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.002
+[2022.01.21-09.04.17:105][ 21]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.733641
+[2022.01.21-09.04.17:105][ 21]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0021
+[2022.01.21-09.04.17:139][ 22]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.767646
+[2022.01.21-09.04.17:139][ 22]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0022
+[2022.01.21-09.04.17:172][ 23]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.800639
+[2022.01.21-09.04.17:172][ 23]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0023
+[2022.01.21-09.04.17:205][ 24]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.833643
+[2022.01.21-09.04.17:205][ 24]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0024
+[2022.01.21-09.04.17:238][ 25]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.86665
+[2022.01.21-09.04.17:238][ 25]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0025
+[2022.01.21-09.04.17:272][ 26]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.900039
+[2022.01.21-09.04.17:272][ 26]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0026
+[2022.01.21-09.04.17:306][ 27]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.934178
+[2022.01.21-09.04.17:306][ 27]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0027
+[2022.01.21-09.04.17:339][ 28]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.967193
+[2022.01.21-09.04.17:339][ 28]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0028
+[2022.01.21-09.04.17:373][ 29]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.001199
+[2022.01.21-09.04.17:373][ 29]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0029
+[2022.01.21-09.04.17:407][ 30]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.035214
+[2022.01.21-09.04.17:407][ 30]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.003
+[2022.01.21-09.04.17:440][ 31]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.068238
+[2022.01.21-09.04.17:440][ 31]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0031
+[2022.01.21-09.04.17:474][ 32]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.102246
+[2022.01.21-09.04.17:474][ 32]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0032
+[2022.01.21-09.04.17:507][ 33]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.135648
+[2022.01.21-09.04.17:507][ 33]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0033
+[2022.01.21-09.04.17:540][ 34]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.168652
+[2022.01.21-09.04.17:540][ 34]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0034
+[2022.01.21-09.04.17:574][ 35]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.201659
+[2022.01.21-09.04.17:574][ 35]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0035
+[2022.01.21-09.04.17:607][ 36]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.234667
+[2022.01.21-09.04.17:607][ 36]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0036
+[2022.01.21-09.04.17:640][ 37]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.267681
+[2022.01.21-09.04.17:640][ 37]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0037
+[2022.01.21-09.04.17:673][ 38]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.300685
+[2022.01.21-09.04.17:673][ 38]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0038
+[2022.01.21-09.04.17:706][ 39]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.333691
+[2022.01.21-09.04.17:706][ 39]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0039
+[2022.01.21-09.04.17:739][ 40]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.367599
+[2022.01.21-09.04.17:739][ 40]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.004
+[2022.01.21-09.04.17:772][ 41]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.400609
+[2022.01.21-09.04.17:772][ 41]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0041
+[2022.01.21-09.04.17:806][ 42]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.434155
+[2022.01.21-09.04.17:806][ 42]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0042
+[2022.01.21-09.04.17:839][ 43]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.466821
+[2022.01.21-09.04.17:839][ 43]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0043
+[2022.01.21-09.04.17:873][ 44]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.500834
+[2022.01.21-09.04.17:873][ 44]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0044
+[2022.01.21-09.04.17:906][ 45]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.534346
+[2022.01.21-09.04.17:906][ 45]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0045
+[2022.01.21-09.04.17:940][ 46]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.567947
+[2022.01.21-09.04.17:940][ 46]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0046
+[2022.01.21-09.04.17:973][ 47]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.600961
+[2022.01.21-09.04.17:973][ 47]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0047
+[2022.01.21-09.04.18:006][ 48]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.634473
+[2022.01.21-09.04.18:006][ 48]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0048
+[2022.01.21-09.04.18:039][ 49]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.667542
+[2022.01.21-09.04.18:039][ 49]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0049
+[2022.01.21-09.04.18:073][ 50]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.701551
+[2022.01.21-09.04.18:073][ 50]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.005
+[2022.01.21-09.04.18:106][ 51]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.734559
+[2022.01.21-09.04.18:106][ 51]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0051
+[2022.01.21-09.04.18:140][ 52]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.768569
+[2022.01.21-09.04.18:140][ 52]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0052
+[2022.01.21-09.04.18:173][ 53]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.801575
+[2022.01.21-09.04.18:173][ 53]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0053
+[2022.01.21-09.04.18:207][ 54]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.834978
+[2022.01.21-09.04.18:207][ 54]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0054
+[2022.01.21-09.04.18:240][ 55]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.867982
+[2022.01.21-09.04.18:240][ 55]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0055
+[2022.01.21-09.04.18:273][ 56]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.900995
+[2022.01.21-09.04.18:273][ 56]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0056
+[2022.01.21-09.04.18:306][ 57]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.934002
+[2022.01.21-09.04.18:306][ 57]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0057
+[2022.01.21-09.04.18:339][ 58]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 1.967011
+[2022.01.21-09.04.18:339][ 58]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0058
+[2022.01.21-09.04.18:372][ 59]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.000017
+[2022.01.21-09.04.18:372][ 59]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0059
+[2022.01.21-09.04.18:406][ 60]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.034027
+[2022.01.21-09.04.18:406][ 60]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.006
+[2022.01.21-09.04.18:439][ 61]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.067034
+[2022.01.21-09.04.18:439][ 61]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0061
+[2022.01.21-09.04.18:472][ 62]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.100543
+[2022.01.21-09.04.18:472][ 62]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0062
+[2022.01.21-09.04.18:505][ 63]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.133553
+[2022.01.21-09.04.18:505][ 63]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0063
+[2022.01.21-09.04.18:538][ 64]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.166559
+[2022.01.21-09.04.18:538][ 64]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0064
+[2022.01.21-09.04.18:571][ 65]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.199571
+[2022.01.21-09.04.18:571][ 65]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0065
+[2022.01.21-09.04.18:604][ 66]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.232579
+[2022.01.21-09.04.18:604][ 66]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0066
+[2022.01.21-09.04.18:637][ 67]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.265586
+[2022.01.21-09.04.18:637][ 67]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0067
+[2022.01.21-09.04.18:671][ 68]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.299596
+[2022.01.21-09.04.18:671][ 68]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0068
+[2022.01.21-09.04.18:704][ 69]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.332606
+[2022.01.21-09.04.18:704][ 69]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0069
+[2022.01.21-09.04.18:738][ 70]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.366614
+[2022.01.21-09.04.18:738][ 70]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.007
+[2022.01.21-09.04.18:771][ 71]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.399624
+[2022.01.21-09.04.18:771][ 71]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0071
+[2022.01.21-09.04.18:805][ 72]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.433159
+[2022.01.21-09.04.18:805][ 72]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0072
+[2022.01.21-09.04.18:838][ 73]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.466327
+[2022.01.21-09.04.18:838][ 73]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0073
+[2022.01.21-09.04.18:872][ 74]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.499845
+[2022.01.21-09.04.18:872][ 74]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0074
+[2022.01.21-09.04.18:905][ 75]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.533384
+[2022.01.21-09.04.18:905][ 75]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0075
+[2022.01.21-09.04.18:939][ 76]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.566829
+[2022.01.21-09.04.18:939][ 76]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0076
+[2022.01.21-09.04.18:973][ 77]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.600834
+[2022.01.21-09.04.18:973][ 77]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0077
+[2022.01.21-09.04.19:006][ 78]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.633848
+[2022.01.21-09.04.19:006][ 78]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0078
+[2022.01.21-09.04.19:039][ 79]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.667241
+[2022.01.21-09.04.19:039][ 79]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0079
+[2022.01.21-09.04.19:072][ 80]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.700256
+[2022.01.21-09.04.19:072][ 80]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.008
+[2022.01.21-09.04.19:105][ 81]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.733536
+[2022.01.21-09.04.19:105][ 81]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0081
+[2022.01.21-09.04.19:138][ 82]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.766546
+[2022.01.21-09.04.19:138][ 82]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0082
+[2022.01.21-09.04.19:171][ 83]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.799557
+[2022.01.21-09.04.19:171][ 83]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0083
+[2022.01.21-09.04.19:204][ 84]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.832566
+[2022.01.21-09.04.19:204][ 84]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0084
+[2022.01.21-09.04.19:237][ 85]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.865573
+[2022.01.21-09.04.19:237][ 85]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0085
+[2022.01.21-09.04.19:270][ 86]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.898586
+[2022.01.21-09.04.19:270][ 86]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0086
+[2022.01.21-09.04.19:304][ 87]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.931754
+[2022.01.21-09.04.19:304][ 87]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0087
+[2022.01.21-09.04.19:338][ 88]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.96576
+[2022.01.21-09.04.19:338][ 88]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0088
+[2022.01.21-09.04.19:371][ 89]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 2.998767
+[2022.01.21-09.04.19:371][ 89]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0089
+[2022.01.21-09.04.19:405][ 90]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.032776
+[2022.01.21-09.04.19:405][ 90]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.009
+[2022.01.21-09.04.19:439][ 91]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.066785
+[2022.01.21-09.04.19:439][ 91]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0091
+[2022.01.21-09.04.19:472][ 92]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.099791
+[2022.01.21-09.04.19:472][ 92]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0092
+[2022.01.21-09.04.19:505][ 93]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.132827
+[2022.01.21-09.04.19:505][ 93]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0093
+[2022.01.21-09.04.19:539][ 94]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.166809
+[2022.01.21-09.04.19:539][ 94]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0094
+[2022.01.21-09.04.19:573][ 95]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.201
+[2022.01.21-09.04.19:573][ 95]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0095
+[2022.01.21-09.04.19:607][ 96]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.235006
+[2022.01.21-09.04.19:607][ 96]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0096
+[2022.01.21-09.04.19:640][ 97]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.268014
+[2022.01.21-09.04.19:640][ 97]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0097
+[2022.01.21-09.04.19:673][ 98]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.301023
+[2022.01.21-09.04.19:673][ 98]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0098
+[2022.01.21-09.04.19:706][ 99]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.334032
+[2022.01.21-09.04.19:706][ 99]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0099
+[2022.01.21-09.04.19:739][100]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.367643
+[2022.01.21-09.04.19:739][100]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.01
+[2022.01.21-09.04.19:772][101]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.400653
+[2022.01.21-09.04.19:772][101]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0101
+[2022.01.21-09.04.19:806][102]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.433789
+[2022.01.21-09.04.19:806][102]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0102
+[2022.01.21-09.04.19:839][103]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.466796
+[2022.01.21-09.04.19:839][103]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0103
+[2022.01.21-09.04.19:872][104]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.499804
+[2022.01.21-09.04.19:872][104]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0104
+[2022.01.21-09.04.19:905][105]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.532852
+[2022.01.21-09.04.19:905][105]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0105
+[2022.01.21-09.04.19:939][106]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.56682
+[2022.01.21-09.04.19:939][106]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0106
+[2022.01.21-09.04.19:972][107]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.599828
+[2022.01.21-09.04.19:972][107]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0107
+[2022.01.21-09.04.20:006][108]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.633837
+[2022.01.21-09.04.20:006][108]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0108
+[2022.01.21-09.04.20:039][109]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.667027
+[2022.01.21-09.04.20:039][109]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0109
+[2022.01.21-09.04.20:072][110]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.700043
+[2022.01.21-09.04.20:072][110]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.011
+[2022.01.21-09.04.20:105][111]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.733048
+[2022.01.21-09.04.20:105][111]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0111
+[2022.01.21-09.04.20:138][112]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.766057
+[2022.01.21-09.04.20:138][112]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0112
+[2022.01.21-09.04.20:171][113]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.799573
+[2022.01.21-09.04.20:171][113]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0113
+[2022.01.21-09.04.20:204][114]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.832581
+[2022.01.21-09.04.20:204][114]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0114
+[2022.01.21-09.04.20:237][115]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.865587
+[2022.01.21-09.04.20:237][115]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0115
+[2022.01.21-09.04.20:271][116]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.899592
+[2022.01.21-09.04.20:271][116]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0116
+[2022.01.21-09.04.20:304][117]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.932603
+[2022.01.21-09.04.20:304][117]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0117
+[2022.01.21-09.04.20:339][118]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.966887
+[2022.01.21-09.04.20:339][118]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0118
+[2022.01.21-09.04.20:372][119]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 3.999915
+[2022.01.21-09.04.20:372][119]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0119
+[2022.01.21-09.04.20:405][120]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.032933
+[2022.01.21-09.04.20:405][120]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.012
+[2022.01.21-09.04.20:438][121]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.065936
+[2022.01.21-09.04.20:438][121]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0121
+[2022.01.21-09.04.20:471][122]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.098945
+[2022.01.21-09.04.20:471][122]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0122
+[2022.01.21-09.04.20:504][123]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.131951
+[2022.01.21-09.04.20:504][123]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0123
+[2022.01.21-09.04.20:537][124]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.164959
+[2022.01.21-09.04.20:537][124]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0124
+[2022.01.21-09.04.20:571][125]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.198971
+[2022.01.21-09.04.20:571][125]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0125
+[2022.01.21-09.04.20:604][126]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.231949
+[2022.01.21-09.04.20:604][126]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0126
+[2022.01.21-09.04.20:638][127]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.265955
+[2022.01.21-09.04.20:638][127]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0127
+[2022.01.21-09.04.20:671][128]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.298967
+[2022.01.21-09.04.20:671][128]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0128
+[2022.01.21-09.04.20:705][129]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.332991
+[2022.01.21-09.04.20:705][129]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0129
+[2022.01.21-09.04.20:739][130]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.366982
+[2022.01.21-09.04.20:739][130]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.013
+[2022.01.21-09.04.20:772][131]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.40037
+[2022.01.21-09.04.20:772][131]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0131
+[2022.01.21-09.04.20:805][132]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.433379
+[2022.01.21-09.04.20:805][132]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0132
+[2022.01.21-09.04.20:839][133]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.467028
+[2022.01.21-09.04.20:839][133]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0133
+[2022.01.21-09.04.20:872][134]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.500232
+[2022.01.21-09.04.20:872][134]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0134
+[2022.01.21-09.04.20:905][135]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.533246
+[2022.01.21-09.04.20:905][135]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0135
+[2022.01.21-09.04.20:939][136]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.566753
+[2022.01.21-09.04.20:939][136]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0136
+[2022.01.21-09.04.20:973][137]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.60076
+[2022.01.21-09.04.20:973][137]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0137
+[2022.01.21-09.04.21:006][138]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.633769
+[2022.01.21-09.04.21:006][138]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0138
+[2022.01.21-09.04.21:040][139]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.667779
+[2022.01.21-09.04.21:040][139]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0139
+[2022.01.21-09.04.21:073][140]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.700785
+[2022.01.21-09.04.21:073][140]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.014
+[2022.01.21-09.04.21:106][141]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.733794
+[2022.01.21-09.04.21:106][141]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0141
+[2022.01.21-09.04.21:139][142]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.766778
+[2022.01.21-09.04.21:139][142]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0142
+[2022.01.21-09.04.21:172][143]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.799785
+[2022.01.21-09.04.21:172][143]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0143
+[2022.01.21-09.04.21:205][144]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.832836
+[2022.01.21-09.04.21:205][144]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0144
+[2022.01.21-09.04.21:238][145]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.865803
+[2022.01.21-09.04.21:238][145]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0145
+[2022.01.21-09.04.21:271][146]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.898808
+[2022.01.21-09.04.21:271][146]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0146
+[2022.01.21-09.04.21:304][147]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.931818
+[2022.01.21-09.04.21:304][147]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0147
+[2022.01.21-09.04.21:337][148]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.964828
+[2022.01.21-09.04.21:337][148]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0148
+[2022.01.21-09.04.21:370][149]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 4.997833
+[2022.01.21-09.04.21:370][149]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0149
+[2022.01.21-09.04.21:404][150]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.031844
+[2022.01.21-09.04.21:404][150]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.015
+[2022.01.21-09.04.21:437][151]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.064978
+[2022.01.21-09.04.21:437][151]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0151
+[2022.01.21-09.04.21:470][152]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.097978
+[2022.01.21-09.04.21:470][152]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0152
+[2022.01.21-09.04.21:503][153]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.130985
+[2022.01.21-09.04.21:503][153]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0153
+[2022.01.21-09.04.21:536][154]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.163999
+[2022.01.21-09.04.21:536][154]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0154
+[2022.01.21-09.04.21:569][155]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.197001
+[2022.01.21-09.04.21:569][155]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0155
+[2022.01.21-09.04.21:602][156]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.230011
+[2022.01.21-09.04.21:602][156]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0156
+[2022.01.21-09.04.21:636][157]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.264019
+[2022.01.21-09.04.21:636][157]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0157
+[2022.01.21-09.04.21:669][158]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.297531
+[2022.01.21-09.04.21:669][158]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0158
+[2022.01.21-09.04.21:703][159]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.331541
+[2022.01.21-09.04.21:703][159]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0159
+[2022.01.21-09.04.21:737][160]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.365059
+[2022.01.21-09.04.21:737][160]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.016
+[2022.01.21-09.04.21:770][161]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.398061
+[2022.01.21-09.04.21:770][161]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0161
+[2022.01.21-09.04.21:803][162]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.430813
+[2022.01.21-09.04.21:803][162]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0162
+[2022.01.21-09.04.21:836][163]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.464259
+[2022.01.21-09.04.21:836][163]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0163
+[2022.01.21-09.04.21:869][164]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.497265
+[2022.01.21-09.04.21:869][164]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0164
+[2022.01.21-09.04.21:903][165]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.531311
+[2022.01.21-09.04.21:903][165]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0165
+[2022.01.21-09.04.21:936][166]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.56432
+[2022.01.21-09.04.21:936][166]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0166
+[2022.01.21-09.04.21:970][167]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.598324
+[2022.01.21-09.04.21:970][167]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0167
+[2022.01.21-09.04.22:003][168]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.631338
+[2022.01.21-09.04.22:003][168]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0168
+[2022.01.21-09.04.22:037][169]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.665134
+[2022.01.21-09.04.22:037][169]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0169
+[2022.01.21-09.04.22:070][170]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.698139
+[2022.01.21-09.04.22:070][170]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.017
+[2022.01.21-09.04.22:103][171]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.731148
+[2022.01.21-09.04.22:103][171]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0171
+[2022.01.21-09.04.22:137][172]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.765156
+[2022.01.21-09.04.22:137][172]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0172
+[2022.01.21-09.04.22:170][173]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.798162
+[2022.01.21-09.04.22:170][173]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0173
+[2022.01.21-09.04.22:204][174]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.831918
+[2022.01.21-09.04.22:204][174]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0174
+[2022.01.21-09.04.22:237][175]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.864926
+[2022.01.21-09.04.22:237][175]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0175
+[2022.01.21-09.04.22:270][176]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.89846
+[2022.01.21-09.04.22:270][176]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0176
+[2022.01.21-09.04.22:303][177]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.931467
+[2022.01.21-09.04.22:303][177]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0177
+[2022.01.21-09.04.22:337][178]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.965283
+[2022.01.21-09.04.22:337][178]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0178
+[2022.01.21-09.04.22:370][179]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 5.99829
+[2022.01.21-09.04.22:370][179]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0179
+[2022.01.21-09.04.22:404][180]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.03208
+[2022.01.21-09.04.22:404][180]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.018
+[2022.01.21-09.04.22:437][181]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.06509
+[2022.01.21-09.04.22:437][181]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0181
+[2022.01.21-09.04.22:471][182]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.099096
+[2022.01.21-09.04.22:471][182]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0182
+[2022.01.21-09.04.22:504][183]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.132103
+[2022.01.21-09.04.22:504][183]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0183
+[2022.01.21-09.04.22:538][184]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.166111
+[2022.01.21-09.04.22:538][184]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0184
+[2022.01.21-09.04.22:571][185]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.199121
+[2022.01.21-09.04.22:571][185]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0185
+[2022.01.21-09.04.22:604][186]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.232131
+[2022.01.21-09.04.22:604][186]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0186
+[2022.01.21-09.04.22:637][187]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.265645
+[2022.01.21-09.04.22:637][187]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0187
+[2022.01.21-09.04.22:671][188]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.298691
+[2022.01.21-09.04.22:671][188]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0188
+[2022.01.21-09.04.22:704][189]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.331698
+[2022.01.21-09.04.22:704][189]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0189
+[2022.01.21-09.04.22:737][190]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.364706
+[2022.01.21-09.04.22:737][190]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.019
+[2022.01.21-09.04.22:770][191]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.397718
+[2022.01.21-09.04.22:770][191]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0191
+[2022.01.21-09.04.22:804][192]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.431729
+[2022.01.21-09.04.22:804][192]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0192
+[2022.01.21-09.04.22:837][193]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.464735
+[2022.01.21-09.04.22:837][193]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0193
+[2022.01.21-09.04.22:871][194]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.49875
+[2022.01.21-09.04.22:871][194]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0194
+[2022.01.21-09.04.22:904][195]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.53176
+[2022.01.21-09.04.22:904][195]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0195
+[2022.01.21-09.04.22:937][196]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.564768
+[2022.01.21-09.04.22:937][196]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0196
+[2022.01.21-09.04.22:970][197]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.597787
+[2022.01.21-09.04.22:970][197]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0197
+[2022.01.21-09.04.23:003][198]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.630764
+[2022.01.21-09.04.23:003][198]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0198
+[2022.01.21-09.04.23:036][199]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.663767
+[2022.01.21-09.04.23:036][199]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0199
+[2022.01.21-09.04.23:069][200]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.696775
+[2022.01.21-09.04.23:069][200]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.02
+[2022.01.21-09.04.23:102][201]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.729784
+[2022.01.21-09.04.23:102][201]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0201
+[2022.01.21-09.04.23:135][202]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.762806
+[2022.01.21-09.04.23:135][202]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0202
+[2022.01.21-09.04.23:168][203]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.796264
+[2022.01.21-09.04.23:168][203]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0203
+[2022.01.21-09.04.23:202][204]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.830271
+[2022.01.21-09.04.23:202][204]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0204
+[2022.01.21-09.04.23:236][205]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.863865
+[2022.01.21-09.04.23:236][205]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0205
+[2022.01.21-09.04.23:270][206]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.897869
+[2022.01.21-09.04.23:270][206]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0206
+[2022.01.21-09.04.23:303][207]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.931247
+[2022.01.21-09.04.23:303][207]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0207
+[2022.01.21-09.04.23:336][208]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.964257
+[2022.01.21-09.04.23:336][208]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0208
+[2022.01.21-09.04.23:369][209]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 6.997263
+[2022.01.21-09.04.23:369][209]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0209
+[2022.01.21-09.04.23:402][210]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.030558
+[2022.01.21-09.04.23:402][210]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.021
+[2022.01.21-09.04.23:435][211]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.063563
+[2022.01.21-09.04.23:435][211]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0211
+[2022.01.21-09.04.23:468][212]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.096573
+[2022.01.21-09.04.23:468][212]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0212
+[2022.01.21-09.04.23:502][213]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.130583
+[2022.01.21-09.04.23:502][213]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0213
+[2022.01.21-09.04.23:535][214]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.163589
+[2022.01.21-09.04.23:535][214]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0214
+[2022.01.21-09.04.23:569][215]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.197598
+[2022.01.21-09.04.23:569][215]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0215
+[2022.01.21-09.04.23:602][216]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.230607
+[2022.01.21-09.04.23:602][216]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0216
+[2022.01.21-09.04.23:635][217]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.263613
+[2022.01.21-09.04.23:635][217]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0217
+[2022.01.21-09.04.23:668][218]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.296626
+[2022.01.21-09.04.23:668][218]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0218
+[2022.01.21-09.04.23:702][219]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.329941
+[2022.01.21-09.04.23:702][219]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0219
+[2022.01.21-09.04.23:735][220]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.362948
+[2022.01.21-09.04.23:735][220]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.022
+[2022.01.21-09.04.23:768][221]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.395955
+[2022.01.21-09.04.23:768][221]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0221
+[2022.01.21-09.04.23:800][222]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.428609
+[2022.01.21-09.04.23:800][222]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0222
+[2022.01.21-09.04.23:834][223]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.461969
+[2022.01.21-09.04.23:834][223]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0223
+[2022.01.21-09.04.23:867][224]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.494838
+[2022.01.21-09.04.23:867][224]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0224
+[2022.01.21-09.04.23:900][225]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.528445
+[2022.01.21-09.04.23:900][225]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0225
+[2022.01.21-09.04.23:933][226]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.561451
+[2022.01.21-09.04.23:933][226]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0226
+[2022.01.21-09.04.23:966][227]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.594459
+[2022.01.21-09.04.23:966][227]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0227
+[2022.01.21-09.04.23:999][228]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.627473
+[2022.01.21-09.04.23:999][228]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0228
+[2022.01.21-09.04.24:032][229]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.660516
+[2022.01.21-09.04.24:032][229]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0229
+[2022.01.21-09.04.24:065][230]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.693526
+[2022.01.21-09.04.24:065][230]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.023
+[2022.01.21-09.04.24:098][231]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.726532
+[2022.01.21-09.04.24:098][231]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0231
+[2022.01.21-09.04.24:131][232]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.75954
+[2022.01.21-09.04.24:131][232]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0232
+[2022.01.21-09.04.24:164][233]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.792544
+[2022.01.21-09.04.24:164][233]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0233
+[2022.01.21-09.04.24:198][234]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.826295
+[2022.01.21-09.04.24:198][234]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0234
+[2022.01.21-09.04.24:232][235]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.860302
+[2022.01.21-09.04.24:232][235]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0235
+[2022.01.21-09.04.24:265][236]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.893309
+[2022.01.21-09.04.24:265][236]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0236
+[2022.01.21-09.04.24:299][237]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.927317
+[2022.01.21-09.04.24:299][237]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0237
+[2022.01.21-09.04.24:332][238]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.960325
+[2022.01.21-09.04.24:332][238]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0238
+[2022.01.21-09.04.24:365][239]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 7.993258
+[2022.01.21-09.04.24:365][239]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0239
+[2022.01.21-09.04.24:398][240]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.026268
+[2022.01.21-09.04.24:398][240]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.024
+[2022.01.21-09.04.24:431][241]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.059274
+[2022.01.21-09.04.24:431][241]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0241
+[2022.01.21-09.04.24:464][242]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.092281
+[2022.01.21-09.04.24:464][242]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0242
+[2022.01.21-09.04.24:497][243]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.125289
+[2022.01.21-09.04.24:497][243]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0243
+[2022.01.21-09.04.24:530][244]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.158296
+[2022.01.21-09.04.24:530][244]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0244
+[2022.01.21-09.04.24:564][245]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.192279
+[2022.01.21-09.04.24:564][245]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0245
+[2022.01.21-09.04.24:598][246]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.225953
+[2022.01.21-09.04.24:598][246]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0246
+[2022.01.21-09.04.24:632][247]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.259962
+[2022.01.21-09.04.24:632][247]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0247
+[2022.01.21-09.04.24:665][248]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.292972
+[2022.01.21-09.04.24:665][248]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0248
+[2022.01.21-09.04.24:698][249]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.325976
+[2022.01.21-09.04.24:698][249]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0249
+[2022.01.21-09.04.24:731][250]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.358982
+[2022.01.21-09.04.24:731][250]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.025
+[2022.01.21-09.04.24:764][251]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.392249
+[2022.01.21-09.04.24:764][251]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0251
+[2022.01.21-09.04.24:797][252]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.425259
+[2022.01.21-09.04.24:797][252]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0252
+[2022.01.21-09.04.24:830][253]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.458288
+[2022.01.21-09.04.24:830][253]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0253
+[2022.01.21-09.04.24:863][254]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.491283
+[2022.01.21-09.04.24:863][254]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0254
+[2022.01.21-09.04.24:896][255]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.524299
+[2022.01.21-09.04.24:896][255]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0255
+[2022.01.21-09.04.24:929][256]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.557299
+[2022.01.21-09.04.24:929][256]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0256
+[2022.01.21-09.04.24:963][257]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.59127
+[2022.01.21-09.04.24:963][257]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0257
+[2022.01.21-09.04.24:996][258]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.624278
+[2022.01.21-09.04.24:996][258]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0258
+[2022.01.21-09.04.25:030][259]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.658284
+[2022.01.21-09.04.25:030][259]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0259
+[2022.01.21-09.04.25:063][260]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.691293
+[2022.01.21-09.04.25:063][260]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.026
+[2022.01.21-09.04.25:096][261]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.724301
+[2022.01.21-09.04.25:096][261]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0261
+[2022.01.21-09.04.25:129][262]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.757309
+[2022.01.21-09.04.25:129][262]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0262
+[2022.01.21-09.04.25:162][263]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.790264
+[2022.01.21-09.04.25:162][263]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0263
+[2022.01.21-09.04.25:195][264]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.823431
+[2022.01.21-09.04.25:195][264]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0264
+[2022.01.21-09.04.25:228][265]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.85644
+[2022.01.21-09.04.25:228][265]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0265
+[2022.01.21-09.04.25:261][266]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.889444
+[2022.01.21-09.04.25:261][266]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0266
+[2022.01.21-09.04.25:295][267]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.923452
+[2022.01.21-09.04.25:295][267]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0267
+[2022.01.21-09.04.25:328][268]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.95646
+[2022.01.21-09.04.25:328][268]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0268
+[2022.01.21-09.04.25:362][269]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 8.990642
+[2022.01.21-09.04.25:362][269]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0269
+[2022.01.21-09.04.25:395][270]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.02365
+[2022.01.21-09.04.25:395][270]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.027
+[2022.01.21-09.04.25:429][271]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.056658
+[2022.01.21-09.04.25:429][271]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0271
+[2022.01.21-09.04.25:462][272]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.089664
+[2022.01.21-09.04.25:462][272]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0272
+[2022.01.21-09.04.25:495][273]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.122678
+[2022.01.21-09.04.25:495][273]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0273
+[2022.01.21-09.04.25:528][274]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.155684
+[2022.01.21-09.04.25:528][274]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0274
+[2022.01.21-09.04.25:561][275]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.188689
+[2022.01.21-09.04.25:561][275]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0275
+[2022.01.21-09.04.25:594][276]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.221697
+[2022.01.21-09.04.25:594][276]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0276
+[2022.01.21-09.04.25:628][277]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.255726
+[2022.01.21-09.04.25:628][277]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0277
+[2022.01.21-09.04.25:661][278]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.288713
+[2022.01.21-09.04.25:661][278]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0278
+[2022.01.21-09.04.25:694][279]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.32251
+[2022.01.21-09.04.25:694][279]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0279
+[2022.01.21-09.04.25:728][280]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.356518
+[2022.01.21-09.04.25:728][280]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.028
+[2022.01.21-09.04.25:761][281]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.389547
+[2022.01.21-09.04.25:761][281]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0281
+[2022.01.21-09.04.25:794][282]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.422555
+[2022.01.21-09.04.25:794][282]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0282
+[2022.01.21-09.04.25:827][283]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.455567
+[2022.01.21-09.04.25:827][283]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0283
+[2022.01.21-09.04.25:860][284]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.488575
+[2022.01.21-09.04.25:860][284]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0284
+[2022.01.21-09.04.25:893][285]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.521585
+[2022.01.21-09.04.25:893][285]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0285
+[2022.01.21-09.04.25:926][286]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.554594
+[2022.01.21-09.04.25:926][286]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0286
+[2022.01.21-09.04.25:960][287]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.588104
+[2022.01.21-09.04.25:960][287]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0287
+[2022.01.21-09.04.25:993][288]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.621115
+[2022.01.21-09.04.25:993][288]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0288
+[2022.01.21-09.04.26:026][289]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.654633
+[2022.01.21-09.04.26:026][289]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0289
+[2022.01.21-09.04.26:059][290]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.687636
+[2022.01.21-09.04.26:059][290]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.029
+[2022.01.21-09.04.26:093][291]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.721645
+[2022.01.21-09.04.26:093][291]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0291
+[2022.01.21-09.04.26:127][292]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.755654
+[2022.01.21-09.04.26:127][292]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0292
+[2022.01.21-09.04.26:161][293]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.78866
+[2022.01.21-09.04.26:161][293]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0293
+[2022.01.21-09.04.26:194][294]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.82167
+[2022.01.21-09.04.26:194][294]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0294
+[2022.01.21-09.04.26:227][295]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.854677
+[2022.01.21-09.04.26:227][295]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0295
+[2022.01.21-09.04.26:260][296]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.887686
+[2022.01.21-09.04.26:260][296]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0296
+[2022.01.21-09.04.26:293][297]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.920695
+[2022.01.21-09.04.26:293][297]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0297
+[2022.01.21-09.04.26:326][298]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.953704
+[2022.01.21-09.04.26:326][298]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0298
+[2022.01.21-09.04.26:360][299]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 9.987709
+[2022.01.21-09.04.26:360][299]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0299
+[2022.01.21-09.04.26:393][300]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.020719
+[2022.01.21-09.04.26:393][300]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.03
+[2022.01.21-09.04.26:427][301]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.054726
+[2022.01.21-09.04.26:427][301]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0301
+[2022.01.21-09.04.26:460][302]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.088239
+[2022.01.21-09.04.26:460][302]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0302
+[2022.01.21-09.04.26:493][303]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.121246
+[2022.01.21-09.04.26:493][303]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0303
+[2022.01.21-09.04.26:526][304]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.154254
+[2022.01.21-09.04.26:526][304]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0304
+[2022.01.21-09.04.26:560][305]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.188171
+[2022.01.21-09.04.26:560][305]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0305
+[2022.01.21-09.04.26:593][306]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.221177
+[2022.01.21-09.04.26:593][306]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0306
+[2022.01.21-09.04.26:626][307]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.25418
+[2022.01.21-09.04.26:626][307]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0307
+[2022.01.21-09.04.26:659][308]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.287184
+[2022.01.21-09.04.26:659][308]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0308
+[2022.01.21-09.04.26:692][309]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.320191
+[2022.01.21-09.04.26:692][309]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0309
+[2022.01.21-09.04.26:726][310]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.353705
+[2022.01.21-09.04.26:726][310]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.031
+[2022.01.21-09.04.26:760][311]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.38771
+[2022.01.21-09.04.26:760][311]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0311
+[2022.01.21-09.04.26:793][312]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.421183
+[2022.01.21-09.04.26:793][312]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0312
+[2022.01.21-09.04.26:826][313]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.454192
+[2022.01.21-09.04.26:826][313]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0313
+[2022.01.21-09.04.26:859][314]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.487196
+[2022.01.21-09.04.26:859][314]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0314
+[2022.01.21-09.04.26:892][315]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.520205
+[2022.01.21-09.04.26:892][315]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0315
+[2022.01.21-09.04.26:925][316]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.553216
+[2022.01.21-09.04.26:925][316]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0316
+[2022.01.21-09.04.26:958][317]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.586224
+[2022.01.21-09.04.26:958][317]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0317
+[2022.01.21-09.04.26:991][318]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.619232
+[2022.01.21-09.04.26:991][318]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0318
+[2022.01.21-09.04.27:024][319]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.652241
+[2022.01.21-09.04.27:024][319]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0319
+[2022.01.21-09.04.27:058][320]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.686251
+[2022.01.21-09.04.27:058][320]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.032
+[2022.01.21-09.04.27:091][321]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.719257
+[2022.01.21-09.04.27:091][321]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0321
+[2022.01.21-09.04.27:125][322]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.752834
+[2022.01.21-09.04.27:125][322]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0322
+[2022.01.21-09.04.27:159][323]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.786754
+[2022.01.21-09.04.27:159][323]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0323
+[2022.01.21-09.04.27:192][324]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.819766
+[2022.01.21-09.04.27:192][324]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0324
+[2022.01.21-09.04.27:225][325]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.852791
+[2022.01.21-09.04.27:225][325]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0325
+[2022.01.21-09.04.27:258][326]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.88578
+[2022.01.21-09.04.27:258][326]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0326
+[2022.01.21-09.04.27:291][327]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.918787
+[2022.01.21-09.04.27:291][327]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0327
+[2022.01.21-09.04.27:324][328]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.951797
+[2022.01.21-09.04.27:324][328]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0328
+[2022.01.21-09.04.27:357][329]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 10.984806
+[2022.01.21-09.04.27:357][329]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0329
+[2022.01.21-09.04.27:391][330]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.018814
+[2022.01.21-09.04.27:391][330]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.033
+[2022.01.21-09.04.27:424][331]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.051826
+[2022.01.21-09.04.27:424][331]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0331
+[2022.01.21-09.04.27:458][332]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.085834
+[2022.01.21-09.04.27:458][332]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0332
+[2022.01.21-09.04.27:491][333]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.118841
+[2022.01.21-09.04.27:491][333]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0333
+[2022.01.21-09.04.27:524][334]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.151853
+[2022.01.21-09.04.27:524][334]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0334
+[2022.01.21-09.04.27:557][335]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.185061
+[2022.01.21-09.04.27:557][335]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0335
+[2022.01.21-09.04.27:590][336]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.218252
+[2022.01.21-09.04.27:590][336]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0336
+[2022.01.21-09.04.27:623][337]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.250766
+[2022.01.21-09.04.27:623][337]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0337
+[2022.01.21-09.04.27:656][338]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.284049
+[2022.01.21-09.04.27:656][338]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0338
+[2022.01.21-09.04.27:690][339]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.318058
+[2022.01.21-09.04.27:690][339]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0339
+[2022.01.21-09.04.27:723][340]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.35133
+[2022.01.21-09.04.27:723][340]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.034
+[2022.01.21-09.04.27:757][341]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.384851
+[2022.01.21-09.04.27:757][341]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0341
+[2022.01.21-09.04.27:790][342]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.418108
+[2022.01.21-09.04.27:790][342]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0342
+[2022.01.21-09.04.27:823][343]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.450784
+[2022.01.21-09.04.27:823][343]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0343
+[2022.01.21-09.04.27:856][344]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.483767
+[2022.01.21-09.04.27:856][344]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0344
+[2022.01.21-09.04.27:889][345]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.517278
+[2022.01.21-09.04.27:889][345]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0345
+[2022.01.21-09.04.27:922][346]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 11.550448
+[2022.01.21-09.04.27:922][346]LogBlueprintUserMessages: [ThirdPersonExampleMap_C_6] 0.0346

@@ -29,6 +29,9 @@ public:
 
 	ACodingTestProjCharacter();
 
+	/** Called every frame */
+	virtual void Tick(float DeltaTime) override;
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -94,8 +97,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
 	UAnimMontage* SpawnAnimation;
 
-	/** Amount of time during cooldown */
+	/** Maximum amount of time for cooldown */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
+	float CooldownMax;
+
+	/** Amount of time it has left durning cooldown */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Projectile Spawn")
 	float CooldownLength;
 
 protected:

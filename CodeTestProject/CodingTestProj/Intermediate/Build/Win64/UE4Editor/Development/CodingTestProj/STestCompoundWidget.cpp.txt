@@ -1,0 +1,3 @@
+C:\Users\dusti\Documents\Github\ExWorldCodingTest\CodeTestRepo\CodeTestProject\CodingTestProj\Intermediate\Build\Win64\UE4Editor\Development\CodingTestProj\Definitions.CodingTestProj.h
+C:\Users\dusti\Documents\Github\ExWorldCodingTest\CodeTestRepo\CodeTestProject\CodingTestProj\Source\CodingTestProj\Public\STestCompoundWidget.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\SlateOptMacros.h

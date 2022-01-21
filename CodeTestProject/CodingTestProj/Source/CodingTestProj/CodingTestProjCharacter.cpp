@@ -17,6 +17,8 @@
 
 ACodingTestProjCharacter::ACodingTestProjCharacter()
 {
+	PrimaryActorTick.bCanEverTick = true;
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -53,6 +55,26 @@ ACodingTestProjCharacter::ACodingTestProjCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+}
+
+void ACodingTestProjCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (bProjectileCooldown)
+	{
+		if (CooldownLength > CooldownMax)
+		{
+			bProjectileCooldown = false;
+			CooldownLength = 0;
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Able to fire again!"));
+		}
+		else
+		{
+			CooldownLength = CooldownLength + 0.012;
+		}
+	}
+	
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -164,8 +186,8 @@ void ACodingTestProjCharacter::FlailAround()
 			bProjectileCooldown = true;
 
 			// activates the delay for the CooldownDelay function
-			FTimerHandle InputDelayManager;
-			GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::CooldownDelay, CooldownLength, false);
+			//FTimerHandle InputDelayManager;
+			//GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::CooldownDelay, CooldownLength, false);
 		}
 	}
 }

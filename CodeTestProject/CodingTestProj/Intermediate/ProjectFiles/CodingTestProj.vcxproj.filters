@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CodingTestProj.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6F15E38C-3638-411F-94EF-DA2334313B16}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CodingTestProj.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CodingTestProjEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{8F9FEEBB-B3D3-46AE-8932-E34DBE5E5D31}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CodingTestProj">
+      <UniqueIdentifier>{64FF4A48-45F5-4E6E-9521-59B46D4FFB05}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CodingTestProj\CodingTestProj.Build.cs">
+      <Filter>Source\CodingTestProj</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CodingTestProj\CodingTestProj.cpp">
+      <Filter>Source\CodingTestProj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CodingTestProj\CodingTestProj.h">
+      <Filter>Source\CodingTestProj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CodingTestProj\CodingTestProjCharacter.cpp">
+      <Filter>Source\CodingTestProj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CodingTestProj\CodingTestProjCharacter.h">
+      <Filter>Source\CodingTestProj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CodingTestProj\CodingTestProjGameMode.cpp">
+      <Filter>Source\CodingTestProj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CodingTestProj\CodingTestProjGameMode.h">
+      <Filter>Source\CodingTestProj</Filter>
+    </ClInclude>
+    <Filter Include="Source\CodingTestProj\Private">
+      <UniqueIdentifier>{220736B6-B713-485A-AA8F-F650C6FC6EDA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CodingTestProj\Private\MainHud.cpp">
+      <Filter>Source\CodingTestProj\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CodingTestProj\Private\PlayerWidget.cpp">
+      <Filter>Source\CodingTestProj\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CodingTestProj\Private\ProjectileObject.cpp">
+      <Filter>Source\CodingTestProj\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CodingTestProj\Private\SACertainCompoundWidget.cpp">
+      <Filter>Source\CodingTestProj\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CodingTestProj\Private\SMyCompoundWidget.cpp">
+      <Filter>Source\CodingTestProj\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CodingTestProj\Private\STestCompoundWidget.cpp">
+      <Filter>Source\CodingTestProj\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CodingTestProj\Private\UIWidget.cpp">
+      <Filter>Source\CodingTestProj\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\CodingTestProj\Public">
+      <UniqueIdentifier>{81F015FC-F3EF-4938-BE2C-C4306E6BF6C1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\CodingTestProj\Public\MainHud.h">
+      <Filter>Source\CodingTestProj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CodingTestProj\Public\PlayerWidget.h">
+      <Filter>Source\CodingTestProj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CodingTestProj\Public\ProjectileObject.h">
+      <Filter>Source\CodingTestProj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CodingTestProj\Public\SACertainCompoundWidget.h">
+      <Filter>Source\CodingTestProj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CodingTestProj\Public\SMyCompoundWidget.h">
+      <Filter>Source\CodingTestProj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CodingTestProj\Public\STestCompoundWidget.h">
+      <Filter>Source\CodingTestProj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CodingTestProj\Public\UIWidget.h">
+      <Filter>Source\CodingTestProj\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

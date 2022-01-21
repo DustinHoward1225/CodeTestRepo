@@ -24,6 +24,8 @@ AProjectileObject::AProjectileObject()
     // Collision Radius and OnHit assigned
     ProjectileCollisionComponent->OnComponentHit.AddDynamic(this, &AProjectileObject::OnHit);
     ProjectileCollisionComponent->InitSphereRadius(35.0f);
+    ProjectileCollisionComponent->BodyInstance.SetCollisionProfileName("BlockAllDynamic");
+    ProjectileCollisionComponent->BodyInstance.bNotifyRigidBodyCollision = true;
 
     // Mesh component setup
     ProjectileMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
@@ -48,7 +50,7 @@ AProjectileObject::AProjectileObject()
     ProjectileMovementComponent->bShouldBounce = true;
     ProjectileMovementComponent->Bounciness = 0.3f;
     ProjectileMovementComponent->ProjectileGravityScale = 0.0f;
-
+    
     // Lifespan of projectile
     ProjectileLifespan = 7.0f;
 }
