@@ -61,7 +61,10 @@ void ACodingTestProjCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (bProjectileCooldown)
+	//''secsLeft = GetWorld()->GetTimerManager().GetTimerRemaining(InputDelayManager);
+	//''FString TheFloatStr = FString::SanitizeFloat(secsLeft);
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *TheFloatStr);
+	/*if (bProjectileCooldown)
 	{
 		if (CooldownLength > CooldownMax)
 		{
@@ -74,7 +77,7 @@ void ACodingTestProjCharacter::Tick(float DeltaTime)
 			CooldownLength = CooldownLength + 0.012;
 		}
 	}
-	
+	*/
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -177,6 +180,9 @@ void ACodingTestProjCharacter::MoveRight(float Value)
 
 void ACodingTestProjCharacter::FlailAround()
 {
+	FlailAroundBP();
+	FTimerHandle InputDelayManager;
+	//FTimerHandle hargtime;
 	if (SpawnAnimation)
 	{
 		if (!bProjectileCooldown)
@@ -186,10 +192,21 @@ void ACodingTestProjCharacter::FlailAround()
 			bProjectileCooldown = true;
 
 			// activates the delay for the CooldownDelay function
-			//FTimerHandle InputDelayManager;
-			//GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::CooldownDelay, CooldownLength, false);
+			
+			GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::CooldownDelay, CooldownMax, false);
+			FlailAroundBPFortimer();
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ADELAY STARTED!"));
 		}
+		
 	}
+/*	if (GetWorld()->GetTimerManager().IsTimerActive(InputDelayManager))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("popopopop"));
+	}
+	secsLeft = GetWorld()->GetTimerManager().GetTimerElapsed(InputDelayManager);
+	FString TheFloatStr = FString::SanitizeFloat(secsLeft);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *TheFloatStr);
+	*/
 }
 
 void ACodingTestProjCharacter::CooldownDelay()
@@ -201,8 +218,12 @@ void ACodingTestProjCharacter::CooldownDelay()
 
 void ACodingTestProjCharacter::SpawnProjectile()
 {
-	// spawns the projectils by using the location and rotation of the provided component
-	const FVector SpawnPlaceLocation = ProjectileSpawnPlace->GetComponentLocation();
-	const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
-	GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
+	//if (!bProjectileCooldown)
+	//{
+		// spawns the projectils by using the location and rotation of the provided component
+		const FVector SpawnPlaceLocation = ProjectileSpawnPlace->GetComponentLocation();
+		const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
+		GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("projectile test"));
+	//}
 }

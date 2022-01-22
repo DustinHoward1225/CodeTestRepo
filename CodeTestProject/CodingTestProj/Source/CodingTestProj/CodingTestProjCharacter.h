@@ -83,7 +83,14 @@ public:
 public:
 
 	/** Executes Flailing Animation Montage */
+	UFUNCTION(BlueprintCallable, Category = "Other Functionality")
 	void FlailAround();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
+		void FlailAroundBP();
+	
+	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
+		void FlailAroundBPFortimer();
 
 	/** As it's able to be called from blueprint, this handles bringing the projectile in the game. */
 	UFUNCTION(BlueprintCallable, Category = "Other Functionality")
@@ -102,7 +109,7 @@ public:
 	float CooldownMax;
 
 	/** Amount of time it has left durning cooldown */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Projectile Spawn")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
 	float CooldownLength;
 
 protected:
@@ -110,5 +117,10 @@ protected:
 	void CooldownDelay();
 
 	/** Handler for when fire the projectile during cooldown */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
 	bool bProjectileCooldown;	
+
+
+	
+	float secsLeft;
 };

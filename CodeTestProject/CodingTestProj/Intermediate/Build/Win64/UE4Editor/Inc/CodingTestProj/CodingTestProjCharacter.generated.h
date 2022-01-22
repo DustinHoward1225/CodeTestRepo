@@ -16,14 +16,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_SPARSE_DATA
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execSpawnProjectile);
+	DECLARE_FUNCTION(execSpawnProjectile); \
+	DECLARE_FUNCTION(execFlailAround);
 
 
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execSpawnProjectile);
+	DECLARE_FUNCTION(execSpawnProjectile); \
+	DECLARE_FUNCTION(execFlailAround);
 
 
+#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_EVENT_PARMS
+#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_CALLBACK_WRAPPERS
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACodingTestProjCharacter(); \
@@ -69,16 +73,21 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACodingTestProjCharacter); \
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ACodingTestProjCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ACodingTestProjCharacter, FollowCamera); } \
-	FORCEINLINE static uint32 __PPO__ProjectileSpawnPlace() { return STRUCT_OFFSET(ACodingTestProjCharacter, ProjectileSpawnPlace); }
+	FORCEINLINE static uint32 __PPO__ProjectileSpawnPlace() { return STRUCT_OFFSET(ACodingTestProjCharacter, ProjectileSpawnPlace); } \
+	FORCEINLINE static uint32 __PPO__bProjectileCooldown() { return STRUCT_OFFSET(ACodingTestProjCharacter, bProjectileCooldown); }
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_11_PROLOG
+#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_11_PROLOG \
+	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_EVENT_PARMS
+
+
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_SPARSE_DATA \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_RPC_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_CALLBACK_WRAPPERS \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_INCLASS \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_STANDARD_CONSTRUCTORS \
 public: \
@@ -91,6 +100,7 @@ public: \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_SPARSE_DATA \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_CALLBACK_WRAPPERS \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_INCLASS_NO_PURE_DECLS \
 	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
