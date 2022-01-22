@@ -1,12 +1,14 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 //#include "CodingTestProjCharacter.h"
+#include "Blueprint/UserWidget.h"
 #include "PlayerWidget.h"
 
-UPlayerWidget::UPlayerWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
-{
+//UPlayerWidget::UPlayerWidget()
+//{
+	//PrimaryActorTick.bCanEverTick = true;
+//}
 
-}
 void UPlayerWidget::UpdateCooldownAmount(float Value)
 {
 	//ACodingTestProjCharacter* OtherChar;
@@ -14,13 +16,29 @@ void UPlayerWidget::UpdateCooldownAmount(float Value)
 	//{
 //
 	//}
-	//if (OtherChar->bProjectileCooldown)
-	//{
-	//	CooldownBar.Value = OtherChar->CooldownLength / OtherChar->CooldownMax;
-	//}
+	
 }
 
 void UPlayerWidget::ResetCooldown()
 {
 
 }
+
+void UPlayerWidget::NativeTick(const FGeometry& MyGeometry, float DeltaTime)
+{
+	
+	Super::NativeTick(MyGeometry, DeltaTime);
+	if (Character->bProjectileCooldown)
+	{
+		CooldownBar->SetPercent(Character->CooldownLength / Character->CooldownMax);
+	}
+}
+
+/*
+void UPlayerWidget::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	
+}
+*/

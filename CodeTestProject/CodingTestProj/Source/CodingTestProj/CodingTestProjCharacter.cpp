@@ -60,10 +60,13 @@ ACodingTestProjCharacter::ACodingTestProjCharacter()
 void ACodingTestProjCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	//''secsLeft = GetWorld()->GetTimerManager().GetTimerRemaining(InputDelayManager);
-	//''FString TheFloatStr = FString::SanitizeFloat(secsLeft);
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *TheFloatStr);
+	
+	if (bProjectileCooldown) 
+	{
+		secsLeft = GetWorld()->GetTimerManager().GetTimerRemaining(oofBIGTIME);
+		CooldownLength = secsLeft;
+	}
+	
 	/*if (bProjectileCooldown)
 	{
 		if (CooldownLength > CooldownMax)
@@ -180,8 +183,7 @@ void ACodingTestProjCharacter::MoveRight(float Value)
 
 void ACodingTestProjCharacter::FlailAround()
 {
-	FlailAroundBP();
-	FTimerHandle InputDelayManager;
+	FlailAroundBP();	
 	//FTimerHandle hargtime;
 	if (SpawnAnimation)
 	{
@@ -192,21 +194,24 @@ void ACodingTestProjCharacter::FlailAround()
 			bProjectileCooldown = true;
 
 			// activates the delay for the CooldownDelay function
-			
-			GetWorld()->GetTimerManager().SetTimer(InputDelayManager, this, &ACodingTestProjCharacter::CooldownDelay, CooldownMax, false);
+			//FTimerHandle InputDelayManager;
+			//FTimerHandle Yep;
+			GetWorld()->GetTimerManager().SetTimer(oofBIGTIME, this, &ACodingTestProjCharacter::CooldownDelay, CooldownMax, false);
 			FlailAroundBPFortimer();
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ADELAY STARTED!"));
+			//if (GetWorld()->GetTimerManager().IsTimerActive(InputDelayManager))
+			//{
+		//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("popopopop"));
+		//	}
 		}
 		
 	}
-/*	if (GetWorld()->GetTimerManager().IsTimerActive(InputDelayManager))
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("popopopop"));
-	}
-	secsLeft = GetWorld()->GetTimerManager().GetTimerElapsed(InputDelayManager);
-	FString TheFloatStr = FString::SanitizeFloat(secsLeft);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *TheFloatStr);
-	*/
+	
+
+	//secsLeft = GetWorld()->GetTimerManager().GetTimerElapsed(InputDelayManager);
+	//FString TheFloatStr = FString::SanitizeFloat(secsLeft);
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *TheFloatStr);
+	
 }
 
 void ACodingTestProjCharacter::CooldownDelay()
@@ -224,6 +229,6 @@ void ACodingTestProjCharacter::SpawnProjectile()
 		const FVector SpawnPlaceLocation = ProjectileSpawnPlace->GetComponentLocation();
 		const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
 		GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("projectile test"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("projectile test"));
 	//}
 }

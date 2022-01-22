@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_CodingTestProj();
 	UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
+	CODINGTESTPROJ_API UClass* Z_Construct_UClass_ACodingTestProjCharacter_NoRegister();
 // End Cross Module References
 	void UPlayerWidget::StaticRegisterNativesUPlayerWidget()
 	{
@@ -36,6 +37,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CooldownBar_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CooldownBar;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Character_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Character;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -46,23 +51,33 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerWidget_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "PlayerWidget.h" },
 		{ "ModuleRelativePath", "Public/PlayerWidget.h" },
-		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar_MetaData[] = {
 		{ "BindWidget", "" },
 		{ "Category", "PlayerWidget" },
+		{ "Comment", "//virtual void Tick(float DeltaTime) override;\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/PlayerWidget.h" },
+		{ "ToolTip", "virtual void Tick(float DeltaTime) override;" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar = { "CooldownBar", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerWidget, CooldownBar), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData[] = {
+		{ "Category", "PlayerWidget" },
+		{ "Comment", "/*/, meta = (BindWidget) */" },
+		{ "ModuleRelativePath", "Public/PlayerWidget.h" },
+		{ "ToolTip", "/, meta = (BindWidget)" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character = { "Character", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerWidget, Character), Z_Construct_UClass_ACodingTestProjCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPlayerWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UPlayerWidget>::IsAbstract,
@@ -91,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerWidget, 1974623346);
+	IMPLEMENT_CLASS(UPlayerWidget, 1178232329);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<UPlayerWidget>()
 	{
 		return UPlayerWidget::StaticClass();

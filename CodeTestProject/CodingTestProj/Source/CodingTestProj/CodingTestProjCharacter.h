@@ -116,11 +116,14 @@ protected:
 	/** Wait for the cooldown to end */
 	void CooldownDelay();
 
-	/** Handler for when fire the projectile during cooldown */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
-	bool bProjectileCooldown;	
-
-
+		
 	
 	float secsLeft;
+
+public:
+	FTimerHandle oofBIGTIME;
+
+	/** Handler for when fire the projectile during cooldown */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
+		bool bProjectileCooldown;
 };
