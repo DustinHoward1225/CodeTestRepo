@@ -43,6 +43,14 @@ template<> CODINGTESTPROJ_API UScriptStruct* StaticStruct<struct FProjectileEffe
 		UDataTable* EffectTable; \
 		AActor* AffectedActor; \
 		FString AffectedObjectType; \
+	}; \
+	struct ProjectileObject_eventOnHitBP_Parms \
+	{ \
+		UPrimitiveComponent* HitComponent; \
+		AActor* OtherActor; \
+		UPrimitiveComponent* OtherComp; \
+		FVector NormalImpulse; \
+		FHitResult Hit; \
 	};
 
 

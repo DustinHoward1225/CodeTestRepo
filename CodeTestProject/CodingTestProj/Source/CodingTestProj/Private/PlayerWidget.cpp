@@ -9,21 +9,6 @@
 	//PrimaryActorTick.bCanEverTick = true;
 //}
 
-void UPlayerWidget::UpdateCooldownAmount(float Value)
-{
-	//ACodingTestProjCharacter* OtherChar;
-	//if (Character = OtherChar)
-	//{
-//
-	//}
-	
-}
-
-void UPlayerWidget::ResetCooldown()
-{
-
-}
-
 void UPlayerWidget::NativeTick(const FGeometry& MyGeometry, float DeltaTime)
 {
 	

@@ -197,7 +197,7 @@ void ACodingTestProjCharacter::FlailAround()
 			//FTimerHandle InputDelayManager;
 			//FTimerHandle Yep;
 			GetWorld()->GetTimerManager().SetTimer(oofBIGTIME, this, &ACodingTestProjCharacter::CooldownDelay, CooldownMax, false);
-			FlailAroundBPFortimer();
+//			FlailAroundBPFortimer();
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ADELAY STARTED!"));
 			//if (GetWorld()->GetTimerManager().IsTimerActive(InputDelayManager))
 			//{
@@ -206,8 +206,6 @@ void ACodingTestProjCharacter::FlailAround()
 		}
 		
 	}
-	
-
 	//secsLeft = GetWorld()->GetTimerManager().GetTimerElapsed(InputDelayManager);
 	//FString TheFloatStr = FString::SanitizeFloat(secsLeft);
 	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *TheFloatStr);
@@ -215,7 +213,8 @@ void ACodingTestProjCharacter::FlailAround()
 }
 
 void ACodingTestProjCharacter::CooldownDelay()
-{
+{	
+	EndOfCooldownBP();
 	// turns off the cooldown and prints on the string to fire the projectile again
 	bProjectileCooldown = false;
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Able to fire again!"));
@@ -223,6 +222,7 @@ void ACodingTestProjCharacter::CooldownDelay()
 
 void ACodingTestProjCharacter::SpawnProjectile()
 {
+	SpawnProjectileBP();
 	//if (!bProjectileCooldown)
 	//{
 		// spawns the projectils by using the location and rotation of the provided component

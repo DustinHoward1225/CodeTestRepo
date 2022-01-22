@@ -83,17 +83,14 @@ public:
 public:
 
 	/** Executes Flailing Animation Montage */
-	UFUNCTION(BlueprintCallable, Category = "Other Functionality")
+	//UFUNCTION(BlueprintCallable, Category = "Other Functionality")
 	void FlailAround();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
-		void FlailAroundBP();
-	
-	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
-		void FlailAroundBPFortimer();
+	void FlailAroundBP();
 
 	/** As it's able to be called from blueprint, this handles bringing the projectile in the game. */
-	UFUNCTION(BlueprintCallable, Category = "Other Functionality")
+	//UFUNCTION(BlueprintCallable, Category = "Other Functionality")
 	void SpawnProjectile();
 	
 	/** Handles object or actor of the projectile */
@@ -126,4 +123,10 @@ public:
 	/** Handler for when fire the projectile during cooldown */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
 		bool bProjectileCooldown;
+
+		UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
+		void SpawnProjectileBP();
+
+		UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
+		void EndOfCooldownBP();
 };

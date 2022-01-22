@@ -38,15 +38,20 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		P_THIS->FlailAround();
 		P_NATIVE_END;
 	}
+	static FName NAME_ACodingTestProjCharacter_EndOfCooldownBP = FName(TEXT("EndOfCooldownBP"));
+	void ACodingTestProjCharacter::EndOfCooldownBP()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_EndOfCooldownBP),NULL);
+	}
 	static FName NAME_ACodingTestProjCharacter_FlailAroundBP = FName(TEXT("FlailAroundBP"));
 	void ACodingTestProjCharacter::FlailAroundBP()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_FlailAroundBP),NULL);
 	}
-	static FName NAME_ACodingTestProjCharacter_FlailAroundBPFortimer = FName(TEXT("FlailAroundBPFortimer"));
-	void ACodingTestProjCharacter::FlailAroundBPFortimer()
+	static FName NAME_ACodingTestProjCharacter_SpawnProjectileBP = FName(TEXT("SpawnProjectileBP"));
+	void ACodingTestProjCharacter::SpawnProjectileBP()
 	{
-		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_FlailAroundBPFortimer),NULL);
+		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_SpawnProjectileBP),NULL);
 	}
 	void ACodingTestProjCharacter::StaticRegisterNativesACodingTestProjCharacter()
 	{
@@ -56,6 +61,29 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 			{ "SpawnProjectile", &ACodingTestProjCharacter::execSpawnProjectile },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Other Functionality" },
+		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "EndOfCooldownBP", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ACodingTestProjCharacter_FlailAround_Statics
 	{
@@ -105,29 +133,6 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Other Functionality" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "FlailAroundBPFortimer", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics
 	{
 #if WITH_METADATA
@@ -150,6 +155,29 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Other Functionality" },
+		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "SpawnProjectileBP", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -214,10 +242,11 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CodingTestProj,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACodingTestProjCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP, "EndOfCooldownBP" }, // 3846697988
 		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAround, "FlailAround" }, // 2956813495
 		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBP, "FlailAroundBP" }, // 992334622
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBPFortimer, "FlailAroundBPFortimer" }, // 195543930
 		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile, "SpawnProjectile" }, // 3072377344
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP, "SpawnProjectileBP" }, // 1270908331
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::Class_MetaDataParams[] = {
@@ -367,7 +396,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACodingTestProjCharacter, 208430523);
+	IMPLEMENT_CLASS(ACodingTestProjCharacter, 145398738);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<ACodingTestProjCharacter>()
 	{
 		return ACodingTestProjCharacter::StaticClass();

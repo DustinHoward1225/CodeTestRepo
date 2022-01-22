@@ -101,4 +101,10 @@ protected:
 
 	/** Destroys itself when lifespan runs out */
 	void DestroySelf();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
+		void OnHitBP(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
+		void DestroySelfBP();
 };

@@ -19,15 +19,7 @@ UCLASS()
 class CODINGTESTPROJ_API UPlayerWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	
-
-	void UpdateCooldownAmount(float Value);
-
-	void ResetCooldown();
-
 	//void Tick();
-
-
 
 public:
 

@@ -78,6 +78,7 @@ void AProjectileObject::Tick(float DeltaTime)
 
 void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
+    OnHitBP(HitComponent, OtherActor, OtherComp, NormalImpulse, Hit);
     // Gets the object type of the affected actor and converts it to a string
     ECollisionChannel ObjectType = OtherComp->GetCollisionObjectType();
     const FString ObjectTypeString = *UEnum::GetDisplayValueAsText(ObjectType).ToString();
@@ -94,13 +95,14 @@ void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
         if (bDestroyProjectile)
         {
             // Destroys the projectile on hit
-            AProjectileObject::Destroy();
+            AProjectileObject::DestroySelf();
         }
     }    
 }
 
 void AProjectileObject::DestroySelf()
 {
+    DestroySelfBP();
     // Destroys the projectile once lifespan runs out
     AProjectileObject::Destroy();
 }
