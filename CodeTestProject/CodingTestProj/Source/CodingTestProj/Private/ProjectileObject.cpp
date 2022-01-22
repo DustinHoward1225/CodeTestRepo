@@ -78,6 +78,7 @@ void AProjectileObject::Tick(float DeltaTime)
 
 void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
+    // Exposing this cue in blueprint
     OnHitBP(HitComponent, OtherActor, OtherComp, NormalImpulse, Hit);
     // Gets the object type of the affected actor and converts it to a string
     ECollisionChannel ObjectType = OtherComp->GetCollisionObjectType();
@@ -90,8 +91,7 @@ void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
             // If the data table is valid and it can affect actors, it would apply the effect and decrement the amount of actors it has left
             OnApplyEffect(EffectDataTable, OtherActor, ObjectTypeString);
             AmountOfActorsToAffect--;
-        } 
-
+        }
         if (bDestroyProjectile)
         {
             // Destroys the projectile on hit
@@ -102,7 +102,9 @@ void AProjectileObject::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
 
 void AProjectileObject::DestroySelf()
 {
+    // Exposing this cue in blueprint
     DestroySelfBP();
+
     // Destroys the projectile once lifespan runs out
     AProjectileObject::Destroy();
 }

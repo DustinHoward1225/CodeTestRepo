@@ -4,26 +4,12 @@
 #include "Blueprint/UserWidget.h"
 #include "PlayerWidget.h"
 
-//UPlayerWidget::UPlayerWidget()
-//{
-	//PrimaryActorTick.bCanEverTick = true;
-//}
-
 void UPlayerWidget::NativeTick(const FGeometry& MyGeometry, float DeltaTime)
 {
-	
+	//Tick function for setting the bar value to the player's cooldown
 	Super::NativeTick(MyGeometry, DeltaTime);
 	if (Character->bProjectileCooldown)
 	{
-		CooldownBar->SetPercent(Character->CooldownLength / Character->CooldownMax);
+		CooldownBar->SetPercent(Character->CooldownSecondsLength / Character->CooldownSecondsMax);
 	}
 }
-
-/*
-void UPlayerWidget::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-	
-}
-*/

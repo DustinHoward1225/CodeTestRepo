@@ -51,27 +51,29 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerWidget_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/** Player Widget */" },
 		{ "IncludePath", "PlayerWidget.h" },
 		{ "ModuleRelativePath", "Public/PlayerWidget.h" },
+		{ "ToolTip", "Player Widget" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar_MetaData[] = {
 		{ "BindWidget", "" },
 		{ "Category", "PlayerWidget" },
-		{ "Comment", "//virtual void Tick(float DeltaTime) override;\n" },
+		{ "Comment", "/** Progress bar to affect */" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/PlayerWidget.h" },
-		{ "ToolTip", "virtual void Tick(float DeltaTime) override;" },
+		{ "ToolTip", "Progress bar to affect" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar = { "CooldownBar", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerWidget, CooldownBar), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_CooldownBar_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData[] = {
 		{ "Category", "PlayerWidget" },
-		{ "Comment", "/*/, meta = (BindWidget) */" },
+		{ "Comment", "/** Player to read cooldown value */" },
 		{ "ModuleRelativePath", "Public/PlayerWidget.h" },
-		{ "ToolTip", "/, meta = (BindWidget)" },
+		{ "ToolTip", "Player to read cooldown value" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character = { "Character", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerWidget, Character), Z_Construct_UClass_ACodingTestProjCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerWidget_Statics::NewProp_Character_MetaData)) };
@@ -106,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerWidget, 1178232329);
+	IMPLEMENT_CLASS(UPlayerWidget, 4024149598);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<UPlayerWidget>()
 	{
 		return UPlayerWidget::StaticClass();

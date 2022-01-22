@@ -63,24 +63,10 @@ void ACodingTestProjCharacter::Tick(float DeltaTime)
 	
 	if (bProjectileCooldown) 
 	{
-		secsLeft = GetWorld()->GetTimerManager().GetTimerRemaining(oofBIGTIME);
-		CooldownLength = secsLeft;
+		// Using the seconds left on the cooldown delay to set the cooldown value
+		RemainingSecondsInCooldown = GetWorld()->GetTimerManager().GetTimerRemaining(DelayTimerHandle);
+		CooldownSecondsLength = RemainingSecondsInCooldown;
 	}
-	
-	/*if (bProjectileCooldown)
-	{
-		if (CooldownLength > CooldownMax)
-		{
-			bProjectileCooldown = false;
-			CooldownLength = 0;
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Able to fire again!"));
-		}
-		else
-		{
-			CooldownLength = CooldownLength + 0.012;
-		}
-	}
-	*/
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -111,7 +97,7 @@ void ACodingTestProjCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACodingTestProjCharacter::OnResetVR);
 
-	//Action to play Flail animation
+	// Action to play Flail animation
 	PlayerInputComponent->BindAction("Flail", IE_Pressed, this, &ACodingTestProjCharacter::FlailAround);
 }
 
@@ -153,11 +139,11 @@ void ACodingTestProjCharacter::MoveForward(float Value)
 {
 	if ((Controller != nullptr) && (Value != 0.0f))
 	{
-		// find out which way is forward
+		// Find out which way is forward
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
-		// get forward vector
+		// Get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
 	}
@@ -167,11 +153,11 @@ void ACodingTestProjCharacter::MoveRight(float Value)
 {
 	if ( (Controller != nullptr) && (Value != 0.0f) )
 	{
-		// find out which way is right
+		// Find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 	
-		// get right vector 
+		// Get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
@@ -183,52 +169,39 @@ void ACodingTestProjCharacter::MoveRight(float Value)
 
 void ACodingTestProjCharacter::FlailAround()
 {
+	// Exposing this cue in blueprint
 	FlailAroundBP();	
-	//FTimerHandle hargtime;
-	if (SpawnAnimation)
+	if (SpawnAnimationMontage)
 	{
 		if (!bProjectileCooldown)
 		{
-			// plays the animation and activates cooldown
-			PlayAnimMontage(SpawnAnimation, 1, NAME_None);
+			// Plays the animation and activates cooldown
+			PlayAnimMontage(SpawnAnimationMontage, 1, NAME_None);
 			bProjectileCooldown = true;
 
-			// activates the delay for the CooldownDelay function
-			//FTimerHandle InputDelayManager;
-			//FTimerHandle Yep;
-			GetWorld()->GetTimerManager().SetTimer(oofBIGTIME, this, &ACodingTestProjCharacter::CooldownDelay, CooldownMax, false);
-//			FlailAroundBPFortimer();
+			// Activates the delay for the CooldownDelay function
+			GetWorld()->GetTimerManager().SetTimer(DelayTimerHandle, this, &ACodingTestProjCharacter::CooldownEnd, CooldownSecondsMax, false);
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ADELAY STARTED!"));
-			//if (GetWorld()->GetTimerManager().IsTimerActive(InputDelayManager))
-			//{
-		//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("popopopop"));
-		//	}
 		}
-		
 	}
-	//secsLeft = GetWorld()->GetTimerManager().GetTimerElapsed(InputDelayManager);
-	//FString TheFloatStr = FString::SanitizeFloat(secsLeft);
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *TheFloatStr);
-	
 }
 
-void ACodingTestProjCharacter::CooldownDelay()
+void ACodingTestProjCharacter::CooldownEnd()
 {	
+	// Exposing this cue in blueprint
 	EndOfCooldownBP();
-	// turns off the cooldown and prints on the string to fire the projectile again
+
+	// Turns off the cooldown and prints on the string to fire the projectile again
 	bProjectileCooldown = false;
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Able to fire again!"));
 }
 
 void ACodingTestProjCharacter::SpawnProjectile()
 {
+	// Exposing this cue in blueprint
 	SpawnProjectileBP();
-	//if (!bProjectileCooldown)
-	//{
-		// spawns the projectils by using the location and rotation of the provided component
-		const FVector SpawnPlaceLocation = ProjectileSpawnPlace->GetComponentLocation();
-		const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
-		GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
-		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("projectile test"));
-	//}
+
+	// Spawns the projectils by using the location and rotation of the provided component
+	const FVector SpawnPlaceLocation = ProjectileSpawnPlace->GetComponentLocation();
+	const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
+	GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
 }

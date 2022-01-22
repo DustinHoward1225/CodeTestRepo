@@ -81,16 +81,8 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 public:
-
-	/** Executes Flailing Animation Montage */
-	//UFUNCTION(BlueprintCallable, Category = "Other Functionality")
-	void FlailAround();
-
-	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
-	void FlailAroundBP();
-
-	/** As it's able to be called from blueprint, this handles bringing the projectile in the game. */
-	//UFUNCTION(BlueprintCallable, Category = "Other Functionality")
+	/** As it's able to be called from animation blueprint, this handles bringing the projectile in the game. */
+	UFUNCTION(BlueprintCallable, Category = "Other Functionality")
 	void SpawnProjectile();
 	
 	/** Handles object or actor of the projectile */
@@ -99,34 +91,43 @@ public:
 	
 	/** Animation Montage to play when Flailing */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
-	UAnimMontage* SpawnAnimation;
-
-	/** Maximum amount of time for cooldown */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
-	float CooldownMax;
-
-	/** Amount of time it has left durning cooldown */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
-	float CooldownLength;
-
-protected:
-	/** Wait for the cooldown to end */
-	void CooldownDelay();
-
-		
-	
-	float secsLeft;
-
-public:
-	FTimerHandle oofBIGTIME;
+	UAnimMontage* SpawnAnimationMontage;
 
 	/** Handler for when fire the projectile during cooldown */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
-		bool bProjectileCooldown;
+	bool bProjectileCooldown;
 
-		UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
-		void SpawnProjectileBP();
+	/** Maximum amount of time for cooldown */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
+	float CooldownSecondsMax;
 
-		UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
-		void EndOfCooldownBP();
+	/** Amount of time it has left durning cooldown */
+	//UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Projectile Spawn")
+	float CooldownSecondsLength;
+
+protected:
+	/** Wait for the cooldown to end */
+	void CooldownEnd();
+
+	/** Play the flail animation and start the cooldown delay */
+	void FlailAround();	
+	
+	/** Amount of seconds left in cooldown delay*/
+	float RemainingSecondsInCooldown;
+
+	/** Handler for the cooldown delay */
+	FTimerHandle DelayTimerHandle;
+public:
+	
+	/** Exposing flailing cue to blueprint */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
+	void FlailAroundBP();	
+
+	/** Exposing actual projectile spawn cue to blueprint */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
+	void SpawnProjectileBP();
+
+	/** Exposing end of cooldown delay cue to blueprint */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
+	void EndOfCooldownBP();
 };

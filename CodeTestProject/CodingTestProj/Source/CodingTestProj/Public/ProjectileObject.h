@@ -21,7 +21,7 @@ struct FProjectileEffect : public FTableRowBase
 
 	/** Column that explains what the effects do for better understanding */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-		FString Description;
+	FString Description;
 };
 
 /** Sphere collision component */
@@ -102,9 +102,11 @@ protected:
 	/** Destroys itself when lifespan runs out */
 	void DestroySelf();
 
+	/** Exposing hitting an object cue to blueprint */
 	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
 		void OnHitBP(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
+	/** Exposing destroying itself cue to blueprint */
 	UFUNCTION(BlueprintImplementableEvent, Category = "ProjectileEffect")
 		void DestroySelfBP();
 };

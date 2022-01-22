@@ -16,14 +16,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_SPARSE_DATA
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execSpawnProjectile); \
-	DECLARE_FUNCTION(execFlailAround);
+	DECLARE_FUNCTION(execSpawnProjectile);
 
 
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execSpawnProjectile); \
-	DECLARE_FUNCTION(execFlailAround);
+	DECLARE_FUNCTION(execSpawnProjectile);
 
 
 #define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_14_EVENT_PARMS
