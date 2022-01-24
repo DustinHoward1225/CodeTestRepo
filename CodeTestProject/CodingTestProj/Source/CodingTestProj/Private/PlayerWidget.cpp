@@ -1,8 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 //#include "CodingTestProjCharacter.h"
-#include "Blueprint/UserWidget.h"
 #include "PlayerWidget.h"
+#include "Blueprint/UserWidget.h"
 
 void UPlayerWidget::NativeTick(const FGeometry& MyGeometry, float DeltaTime)
 {

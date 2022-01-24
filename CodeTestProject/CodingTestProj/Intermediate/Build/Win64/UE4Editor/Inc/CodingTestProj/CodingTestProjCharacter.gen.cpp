@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "CodingTestProj/CodingTestProjCharacter.h"
+#include "CodingTestProj/Public/CodingTestProjCharacter.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -45,13 +45,6 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		P_THIS->FlailAroundServerRPC_Implementation();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(ACodingTestProjCharacter::execSpawnProjectile)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SpawnProjectile();
-		P_NATIVE_END;
-	}
 	static FName NAME_ACodingTestProjCharacter_EndOfCooldownBP = FName(TEXT("EndOfCooldownBP"));
 	void ACodingTestProjCharacter::EndOfCooldownBP()
 	{
@@ -88,7 +81,6 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "FlailAroundMultiRPC", &ACodingTestProjCharacter::execFlailAroundMultiRPC },
 			{ "FlailAroundServerRPC", &ACodingTestProjCharacter::execFlailAroundServerRPC },
-			{ "SpawnProjectile", &ACodingTestProjCharacter::execSpawnProjectile },
 			{ "SpawnProjectileRPC", &ACodingTestProjCharacter::execSpawnProjectileRPC },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -104,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Other Functionality" },
 		{ "Comment", "/** Exposing end of cooldown delay cue to blueprint */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Exposing end of cooldown delay cue to blueprint" },
 	};
 #endif
@@ -129,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBP_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Other Functionality" },
 		{ "Comment", "/** Exposing flailing cue to blueprint */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Exposing flailing cue to blueprint" },
 	};
 #endif
@@ -152,7 +144,9 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "Comment", "/** Calls the Flailing action to all clients */" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
+		{ "ToolTip", "Calls the Flailing action to all clients" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "FlailAroundMultiRPC", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::Function_MetaDataParams)) };
@@ -174,7 +168,9 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "Comment", "/** Calls The Flailing action to server */" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
+		{ "ToolTip", "Calls The Flailing action to server" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "FlailAroundServerRPC", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::Function_MetaDataParams)) };
@@ -184,31 +180,6 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Other Functionality" },
-		{ "Comment", "/** As it's able to be called from animation blueprint, this handles bringing the projectile in the game. */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
-		{ "ToolTip", "As it's able to be called from animation blueprint, this handles bringing the projectile in the game." },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "SpawnProjectile", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -223,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Other Functionality" },
 		{ "Comment", "/** Exposing actual projectile spawn cue to blueprint */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Exposing actual projectile spawn cue to blueprint" },
 	};
 #endif
@@ -246,7 +217,9 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "Comment", "/** Calls spawning the projectile to the server */" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
+		{ "ToolTip", "Calls spawning the projectile to the server" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "SpawnProjectileRPC", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::Function_MetaDataParams)) };
@@ -316,20 +289,19 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CodingTestProj,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACodingTestProjCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP, "EndOfCooldownBP" }, // 3555997019
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBP, "FlailAroundBP" }, // 927899310
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC, "FlailAroundMultiRPC" }, // 1609663168
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC, "FlailAroundServerRPC" }, // 2554283348
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile, "SpawnProjectile" }, // 2175402184
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP, "SpawnProjectileBP" }, // 2977906901
-		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC, "SpawnProjectileRPC" }, // 1159124546
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP, "EndOfCooldownBP" }, // 3989470817
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBP, "FlailAroundBP" }, // 4030820904
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC, "FlailAroundMultiRPC" }, // 711626590
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC, "FlailAroundServerRPC" }, // 374469564
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP, "SpawnProjectileBP" }, // 2740789178
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC, "SpawnProjectileRPC" }, // 493629772
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::Class_MetaDataParams[] = {
 		{ "Comment", "/** Coding Test Proj Character */" },
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "CodingTestProjCharacter.h" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Coding Test Proj Character" },
 	};
 #endif
@@ -339,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		{ "Category", "Camera" },
 		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Camera boom positioning the camera behind the character" },
 	};
 #endif
@@ -350,7 +322,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		{ "Category", "Camera" },
 		{ "Comment", "/** Follow camera */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Follow camera" },
 	};
 #endif
@@ -361,7 +333,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		{ "Category", "CodingTestProjCharacter" },
 		{ "Comment", "/** Place to spawn projectile */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Place to spawn projectile" },
 	};
 #endif
@@ -370,7 +342,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_BaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "Comment", "/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
 	};
 #endif
@@ -379,7 +351,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_BaseLookUpRate_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "Comment", "/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
 	};
 #endif
@@ -388,7 +360,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_AProjectileObj_MetaData[] = {
 		{ "Category", "Projectile Spawn" },
 		{ "Comment", "/** Handles object or actor of the projectile */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Handles object or actor of the projectile" },
 	};
 #endif
@@ -397,7 +369,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_SpawnAnimationMontage_MetaData[] = {
 		{ "Category", "Projectile Spawn" },
 		{ "Comment", "/** Animation Montage to play when Flailing */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Animation Montage to play when Flailing" },
 	};
 #endif
@@ -406,7 +378,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_bProjectileCooldown_MetaData[] = {
 		{ "Category", "Projectile Spawn" },
 		{ "Comment", "/** Handler for when fire the projectile during cooldown */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Handler for when fire the projectile during cooldown" },
 	};
 #endif
@@ -419,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::NewProp_CooldownSecondsMax_MetaData[] = {
 		{ "Category", "Projectile Spawn" },
 		{ "Comment", "/** Maximum amount of time for cooldown */" },
-		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+		{ "ModuleRelativePath", "Public/CodingTestProjCharacter.h" },
 		{ "ToolTip", "Maximum amount of time for cooldown" },
 	};
 #endif
@@ -462,7 +434,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACodingTestProjCharacter, 411110620);
+	IMPLEMENT_CLASS(ACodingTestProjCharacter, 1085944167);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<ACodingTestProjCharacter>()
 	{
 		return ACodingTestProjCharacter::StaticClass();

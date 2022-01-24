@@ -13,32 +13,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CODINGTESTPROJ_CodingTestProjCharacter_generated_h
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_SPARSE_DATA
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_RPC_WRAPPERS \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_SPARSE_DATA
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_RPC_WRAPPERS \
 	virtual void SpawnProjectileRPC_Implementation(); \
 	virtual void FlailAroundMultiRPC_Implementation(); \
 	virtual void FlailAroundServerRPC_Implementation(); \
  \
 	DECLARE_FUNCTION(execSpawnProjectileRPC); \
 	DECLARE_FUNCTION(execFlailAroundMultiRPC); \
-	DECLARE_FUNCTION(execFlailAroundServerRPC); \
-	DECLARE_FUNCTION(execSpawnProjectile);
+	DECLARE_FUNCTION(execFlailAroundServerRPC);
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void SpawnProjectileRPC_Implementation(); \
 	virtual void FlailAroundMultiRPC_Implementation(); \
 	virtual void FlailAroundServerRPC_Implementation(); \
  \
 	DECLARE_FUNCTION(execSpawnProjectileRPC); \
 	DECLARE_FUNCTION(execFlailAroundMultiRPC); \
-	DECLARE_FUNCTION(execFlailAroundServerRPC); \
-	DECLARE_FUNCTION(execSpawnProjectile);
+	DECLARE_FUNCTION(execFlailAroundServerRPC);
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_EVENT_PARMS
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_CALLBACK_WRAPPERS
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_EVENT_PARMS
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_CALLBACK_WRAPPERS
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACodingTestProjCharacter(); \
 	friend struct Z_Construct_UClass_ACodingTestProjCharacter_Statics; \
@@ -47,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(ACodingTestProjCharacter)
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_INCLASS \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesACodingTestProjCharacter(); \
 	friend struct Z_Construct_UClass_ACodingTestProjCharacter_Statics; \
@@ -56,7 +54,7 @@ public: \
 	DECLARE_SERIALIZER(ACodingTestProjCharacter)
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_STANDARD_CONSTRUCTORS \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACodingTestProjCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACodingTestProjCharacter) \
@@ -69,7 +67,7 @@ private: \
 public:
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACodingTestProjCharacter(ACodingTestProjCharacter&&); \
@@ -80,38 +78,38 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACodingTestProjCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACodingTestProjCharacter)
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ACodingTestProjCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ACodingTestProjCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__ProjectileSpawnPlace() { return STRUCT_OFFSET(ACodingTestProjCharacter, ProjectileSpawnPlace); }
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_12_PROLOG \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_EVENT_PARMS
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_12_PROLOG \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_EVENT_PARMS
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_GENERATED_BODY_LEGACY \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_SPARSE_DATA \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_RPC_WRAPPERS \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_CALLBACK_WRAPPERS \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_INCLASS \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_STANDARD_CONSTRUCTORS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_SPARSE_DATA \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_RPC_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_CALLBACK_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_INCLASS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_GENERATED_BODY \
+#define CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_SPARSE_DATA \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_CALLBACK_WRAPPERS \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_SPARSE_DATA \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_CALLBACK_WRAPPERS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_INCLASS_NO_PURE_DECLS \
+	CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -119,7 +117,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> CODINGTESTPROJ_API UClass* StaticClass<class ACodingTestProjCharacter>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID CodingTestProj_Source_CodingTestProj_CodingTestProjCharacter_h
+#define CURRENT_FILE_ID CodingTestProj_Source_CodingTestProj_Public_CodingTestProjCharacter_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

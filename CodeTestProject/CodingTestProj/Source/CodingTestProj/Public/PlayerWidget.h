@@ -4,9 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "kismet/gameplaystatics.h"
-//******THIS IS A PROBLEM: I struggled a lot trying to import my custom Character class in, but it wouldn't find the source files.
-//******I eventually resorted to just copying the file path, but beware that the file path might change on a different machine.
-#include "C:/Users/dusti/Documents/Github/ExWorldCodingTest/CodeTestRepo/CodeTestProject/CodingTestProj/Source/CodingTestProj/CodingTestProjCharacter.h"
+#include "CodingTestProjCharacter.h"
 #include "Blueprint/UserWidget.h"
 #include "Components/ProgressBar.h"
 #include "PlayerWidget.generated.h"
