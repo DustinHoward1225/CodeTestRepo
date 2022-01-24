@@ -24,6 +24,27 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ACodingTestProjCharacter::execSpawnProjectileRPC)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SpawnProjectileRPC_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACodingTestProjCharacter::execFlailAroundMultiRPC)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->FlailAroundMultiRPC_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACodingTestProjCharacter::execFlailAroundServerRPC)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->FlailAroundServerRPC_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACodingTestProjCharacter::execSpawnProjectile)
 	{
 		P_FINISH;
@@ -41,16 +62,34 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_FlailAroundBP),NULL);
 	}
+	static FName NAME_ACodingTestProjCharacter_FlailAroundMultiRPC = FName(TEXT("FlailAroundMultiRPC"));
+	void ACodingTestProjCharacter::FlailAroundMultiRPC()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_FlailAroundMultiRPC),NULL);
+	}
+	static FName NAME_ACodingTestProjCharacter_FlailAroundServerRPC = FName(TEXT("FlailAroundServerRPC"));
+	void ACodingTestProjCharacter::FlailAroundServerRPC()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_FlailAroundServerRPC),NULL);
+	}
 	static FName NAME_ACodingTestProjCharacter_SpawnProjectileBP = FName(TEXT("SpawnProjectileBP"));
 	void ACodingTestProjCharacter::SpawnProjectileBP()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_SpawnProjectileBP),NULL);
 	}
+	static FName NAME_ACodingTestProjCharacter_SpawnProjectileRPC = FName(TEXT("SpawnProjectileRPC"));
+	void ACodingTestProjCharacter::SpawnProjectileRPC()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ACodingTestProjCharacter_SpawnProjectileRPC),NULL);
+	}
 	void ACodingTestProjCharacter::StaticRegisterNativesACodingTestProjCharacter()
 	{
 		UClass* Class = ACodingTestProjCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "FlailAroundMultiRPC", &ACodingTestProjCharacter::execFlailAroundMultiRPC },
+			{ "FlailAroundServerRPC", &ACodingTestProjCharacter::execFlailAroundServerRPC },
 			{ "SpawnProjectile", &ACodingTestProjCharacter::execSpawnProjectile },
+			{ "SpawnProjectileRPC", &ACodingTestProjCharacter::execSpawnProjectileRPC },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -104,6 +143,50 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "FlailAroundMultiRPC", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "FlailAroundServerRPC", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile_Statics
 	{
 #if WITH_METADATA
@@ -151,6 +234,28 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CodingTestProjCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACodingTestProjCharacter, nullptr, "SpawnProjectileRPC", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -213,8 +318,11 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACodingTestProjCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ACodingTestProjCharacter_EndOfCooldownBP, "EndOfCooldownBP" }, // 3555997019
 		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundBP, "FlailAroundBP" }, // 927899310
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundMultiRPC, "FlailAroundMultiRPC" }, // 1609663168
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_FlailAroundServerRPC, "FlailAroundServerRPC" }, // 2554283348
 		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectile, "SpawnProjectile" }, // 2175402184
 		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileBP, "SpawnProjectileBP" }, // 2977906901
+		{ &Z_Construct_UFunction_ACodingTestProjCharacter_SpawnProjectileRPC, "SpawnProjectileRPC" }, // 1159124546
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACodingTestProjCharacter_Statics::Class_MetaDataParams[] = {
@@ -354,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeCodingTestProjCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACodingTestProjCharacter, 2926248527);
+	IMPLEMENT_CLASS(ACodingTestProjCharacter, 411110620);
 	template<> CODINGTESTPROJ_API UClass* StaticClass<ACodingTestProjCharacter>()
 	{
 		return ACodingTestProjCharacter::StaticClass();

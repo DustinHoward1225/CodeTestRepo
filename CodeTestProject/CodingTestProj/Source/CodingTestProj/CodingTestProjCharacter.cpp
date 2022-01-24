@@ -17,7 +17,12 @@
 
 ACodingTestProjCharacter::ACodingTestProjCharacter()
 {
+	// Able to tick every frame
 	PrimaryActorTick.bCanEverTick = true;
+	
+	// Able to replicate actions
+	SetReplicates(true);
+	bReplicates = true;
 
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -98,7 +103,7 @@ void ACodingTestProjCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACodingTestProjCharacter::OnResetVR);
 
 	// Action to play Flail animation
-	PlayerInputComponent->BindAction("Flail", IE_Pressed, this, &ACodingTestProjCharacter::FlailAround);
+	PlayerInputComponent->BindAction("Flail", IE_Pressed, this, &ACodingTestProjCharacter::FlailAroundServerRPC);
 }
 
 
@@ -181,9 +186,59 @@ void ACodingTestProjCharacter::FlailAround()
 
 			// Activates the delay for the CooldownDelay function
 			GetWorld()->GetTimerManager().SetTimer(DelayTimerHandle, this, &ACodingTestProjCharacter::CooldownEnd, CooldownSecondsMax, false);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ADELAY STARTED!"));
 		}
 	}
+}
+
+void ACodingTestProjCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	// Sets up for the Replication process
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+}
+
+
+void ACodingTestProjCharacter::FlailAroundServerRPC_Implementation()
+{
+	// Calls the multicast for the Flailing Action
+	FlailAroundMultiRPC();
+}
+
+void ACodingTestProjCharacter::FlailAroundMultiRPC_Implementation()
+{
+	// Exposing this cue in blueprint
+	FlailAroundBP();
+	if (IsLocallyControlled())
+	{
+		if (SpawnAnimationMontage)
+		{
+			if (!bProjectileCooldown)
+			{
+				// Plays the animation and activates cooldown
+				PlayAnimMontage(SpawnAnimationMontage, 1, NAME_None);
+				bProjectileCooldown = true;
+
+				// Activates the delay for the CooldownDelay function
+				GetWorld()->GetTimerManager().SetTimer(DelayTimerHandle, this, &ACodingTestProjCharacter::CooldownEnd, CooldownSecondsMax, false);
+			}
+		}
+	}
+	else
+	{
+		//Stops the animation from spawning needless projectiles if it isn't possessed
+		StopAnimMontage(SpawnAnimationMontage);
+	}
+}
+
+
+void ACodingTestProjCharacter::SpawnProjectileRPC_Implementation()
+{
+	// Exposing this cue in blueprint
+	SpawnProjectileBP();
+
+	// Spawns the projectils by using the location and rotation of the provided component
+	const FVector SpawnPlaceLocation = ProjectileSpawnPlace->GetComponentLocation();
+	const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
+	GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
 }
 
 void ACodingTestProjCharacter::CooldownEnd()
@@ -205,3 +260,4 @@ void ACodingTestProjCharacter::SpawnProjectile()
 	const FRotator SpawnPlaceRotation = ProjectileSpawnPlace->GetComponentRotation();
 	GetWorld()->SpawnActor<AActor>(AProjectileObj, SpawnPlaceLocation, SpawnPlaceRotation);
 }
+

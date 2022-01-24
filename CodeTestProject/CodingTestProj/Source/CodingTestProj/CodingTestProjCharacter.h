@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "TimerManager.h"
+#include "Net/UnrealNetwork.h"
 #include "CodingTestProjCharacter.generated.h"
 
 /** Coding Test Proj Character */
@@ -117,6 +118,9 @@ protected:
 
 	/** Handler for the cooldown delay */
 	FTimerHandle DelayTimerHandle;
+
+	/** Event for handling replication */
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 public:
 	
 	/** Exposing flailing cue to blueprint */
@@ -130,4 +134,17 @@ public:
 	/** Exposing end of cooldown delay cue to blueprint */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Other Functionality")
 	void EndOfCooldownBP();
+
+	/** Calls The Flailing action to server */
+	UFUNCTION(Server, reliable)
+	void FlailAroundServerRPC();
+	
+	/** Calls the Flailing action to all clients */
+	UFUNCTION(NetMulticast, Reliable)
+	void FlailAroundMultiRPC();
+
+	/** Calls spawning the projectile to the server */
+	UFUNCTION(BlueprintCallable, Server, Reliable)
+	void SpawnProjectileRPC();
+	
 };
